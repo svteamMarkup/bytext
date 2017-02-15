@@ -1,0 +1,12 @@
+.footer {
+  margin-top: 30px;
+  padding: 22px 0;
+
+  background-color: #273040;
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__logo {
+    @include bg($logo);
+  }
+}

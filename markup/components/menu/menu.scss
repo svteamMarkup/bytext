@@ -1,0 +1,38 @@
+.menu {
+  width: 167px;
+
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(#000, .28);
+  &__item {
+    position: relative;
+
+    display: block;
+
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 13px;
+
+    text-decoration: none;
+
+    color: #2b3440;
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 2px solid #656f7e;
+
+    font-size: 14px;
+    &:hover,
+    &._active {
+      border-left-color: #7bc22c;
+      background-color: #f0f1f2;
+    };
+    .fa {
+      display: inline-block;
+
+      width: 20px;
+
+      color: #656f7e;
+    }
+    span {
+      padding-left: 5px;
+    }
+  }
+}

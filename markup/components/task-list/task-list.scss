@@ -1,0 +1,11 @@
+.task-list {
+  box-shadow: 0 0 5px rgba(#000, .28);
+  a {
+    text-decoration: none;
+
+    color: #2d7baf;
+    &:hover {
+      color: #2d7baf + #111;
+    }
+  }
+}

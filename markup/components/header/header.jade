@@ -1,0 +1,36 @@
+mixin header(data)
+  header.header
+    .header__wrapper
+      .header__logo
+        a(href="#" title="") bytext
+
+      .header-block._two-col
+        .header-block__title задания
+        .header-block__list
+          .header-block__item На проверке: 
+            span 123
+          .header-block__item На модерации: 
+            span 96
+          .header-block__item Не закреплено: 
+            span 66
+
+      .header-block
+        .header-block__title Семантика
+        .header-block__list
+          .header-block__item Фильтрованных:
+            span 73
+          .header-block__item Не фильтрованных:
+            span 66
+
+      .header-block
+        .header-block__title Семантика
+        .header-block__list
+          .header-block__item Зарегистрировалось:
+            span 13
+          .header-block__item Отказов статей:
+            span 6
+
+      .header-user
+        .header-user__name 
+          i.fa.fa-user-circle-o
+          span Администратор

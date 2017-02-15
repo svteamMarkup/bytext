@@ -1,0 +1,26 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head
+  include ../components/header/header
+  include ../components/menu/menu
+  include ../components/filter/filter
+  include ../components/task-list/task-list
+  include ../components/pagination/pagination
+  include ../components/footer/footer
+
+  head
+    +head(head.defaults)
+  body
+    block header
+      +header
+    main.main
+      block menu
+        +menu
+      block content
+        h1 Hello, world!
+    block footer
+      +footer()
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
