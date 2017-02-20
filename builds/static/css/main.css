@@ -667,21 +667,6 @@ textarea {
   outline: none;
 }
 
-.footer {
-  margin-top: 30px;
-  padding: 22px 0;
-  background-color: #273040;
-}
-
-.footer__logo {
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px 0px;
-  width: 88px;
-  height: 17px;
-  background-size: 88px, 17px;
-  background-repeat: no-repeat;
-}
-
 .header {
   width: 100%;
   margin-bottom: 20px;
@@ -878,6 +863,21 @@ textarea {
 
 .task-list a:hover {
   color: #3e8cc0;
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 22px 0;
+  background-color: #273040;
+}
+
+.footer__logo {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: 0px 0px;
+  width: 88px;
+  height: 17px;
+  background-size: 88px, 17px;
+  background-repeat: no-repeat;
 }
 
 /*!
