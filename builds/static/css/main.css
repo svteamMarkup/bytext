@@ -449,11 +449,11 @@ blockquote {
   font-size: 14px;
 }
 
-.table._striped tbody tr._last {
+.table._striped tfoot tr {
   background-color: #f4f5f7;
 }
 
-.table._striped tbody tr:not(._last) td:nth-child(2n) {
+.table._striped tbody tr td:nth-child(2n) {
   background-color: #f9fafc;
 }
 
@@ -497,6 +497,10 @@ blockquote {
 
 .table tfoot tr td._inactive .fa {
   color: #a7b2c4;
+}
+
+.table tfoot tr td._center {
+  text-align: center;
 }
 
 .table tbody tr {
@@ -554,6 +558,10 @@ blockquote {
   font-family: "Lato-Semibold";
 }
 
+.table tbody tr td._price ._green {
+  color: #60a218;
+}
+
 .table tbody tr td._active .fa {
   color: #82c537;
   font-size: 12px;
@@ -588,6 +596,10 @@ blockquote {
 .published {
   font-family: "Lato-Semibold";
   font-size: 12px;
+}
+
+.published__sub {
+  font-size: 14px;
 }
 
 .published._green {

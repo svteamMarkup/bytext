@@ -963,80 +963,699 @@ mixin statistic-copyrighters-list(data)
     table.table._striped
       thead
         tr
-          th(width="142")._center Дата
+          th(width="142") Дата
           th(width="238")._center Статей на проверку
           th(width="218")._center Принято статей
           th(width="242")._center В работе
           th(width="260")._center Отказов
+      tfoot
+        tr
+          td Итого:
+          td._center 
+            | 5654
+          td._center
+            | 5654
+          td._center
+            | 5654
+          td._center
+            | 54          
+      tbody
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center._underline
+            a(href="#" title="") 630
+          td._center._underline
+            a(href="#" title="") 15
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center._underline
+            a(href="#" title="") 630
+          td._center._underline
+            a(href="#" title="") 15
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center._underline
+            a(href="#" title="") 630
+          td._center._underline
+            a(href="#" title="") 15
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center._underline
+            a(href="#" title="") 630
+          td._center._underline
+            a(href="#" title="") 15
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center._underline
+            a(href="#" title="") 630
+          td._center._underline
+            a(href="#" title="") 15
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center._underline
+            a(href="#" title="") 630
+          td._center._underline
+            a(href="#" title="") 15
+
+
+mixin statistic-redactors-list(data)
+  .task-list
+    table.table._striped
+      thead
+        tr
+          th(width="142") Дата
+          th(width="238")._center Принято статей
+          th(width="218")._center На доработку
+          th(width="242")._center Знаков
+          th(width="260")._center Рефов
+      tfoot    
+        tr
+          td Итого:
+          td._center 
+            | 5654
+          td._center
+            | 5654
+          td._center
+            | 98 405 654
+          td._center
+            | 54          
+      tbody
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center
+            | 199 136
+          td._center
+            | 199
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center
+            | 199 136
+          td._center
+            | 199
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center
+            | 199 136
+          td._center
+            | 199
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center
+            | 199 136
+          td._center
+            | 199
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center
+            | 199 136
+          td._center
+            | 199
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+          td._center
+            | 199 136
+          td._center
+            | 199
+
+
+mixin statistic-semantist-list(data)
+  .task-list
+    table.table._striped
+      thead
+        tr
+          th(width="142") Дата
+          th(width="452")._center Добавлено ключей
+          th(width="506")._center Отфильтровано
+      tfoot
+        tr
+          td Итого:
+          td._center 
+            | 5654
+          td._center
+            | 405 654            
+      tbody
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+        tr
+          td 23.10.2017
+          td._center._underline
+            a(href="#" title="") 543
+          td._center._underline
+            a(href="#" title="") 320
+
+                                                               
+mixin statistic-poster-list(data)
+  .task-list
+    table.table._striped
+      thead
+        tr
+          th(width="142") Дата
+          th(width="957") Статей размещено
+      tfoot
+         tr
+          td Итого: 5654
+      tbody
+        tr
+          td 23.10.2017
+          td._underline
+            a(href="#" title="") 543
+        tr
+          td 23.10.2017
+          td._underline
+            a(href="#" title="") 543
+        tr
+          td 23.10.2017
+          td._underline
+            a(href="#" title="") 543
+        tr
+          td 23.10.2017
+          td._underline
+            a(href="#" title="") 543
+        tr
+          td 23.10.2017
+          td._underline
+            a(href="#" title="") 543
+        tr
+          td 23.10.2017
+          td._underline
+            a(href="#" title="") 543
+
+
+mixin statistic-compilers-list(data)
+  .task-list
+    table.table._striped
+      thead
+        tr
+          th(width="546")._center Дата
+          th(width="556")._center Статей размещено
+      tfoot  
+        tr
+          td._center Итого:
+          td._center 5654      
       tbody
         tr
           td._center 23.10.2017
           td._center._underline
             a(href="#" title="") 543
-          td._center._underline
-            a(href="#" title="") 320
-          td._center._underline
-            a(href="#" title="") 630
-          td._center._underline
-            a(href="#" title="") 15
         tr
-          td._center._underline 23.10.2017
+          td._center 23.10.2017
           td._center._underline
             a(href="#" title="") 543
-          td._center._underline
-            a(href="#" title="") 320
-          td._center._underline
-            a(href="#" title="") 630
-          td._center._underline
-            a(href="#" title="") 15
         tr
-          td._center._underline 23.10.2017
+          td._center 23.10.2017
           td._center._underline
             a(href="#" title="") 543
-          td._center._underline
-            a(href="#" title="") 320
-          td._center._underline
-            a(href="#" title="") 630
-          td._center._underline
-            a(href="#" title="") 15
         tr
-          td._center._underline 23.10.2017
+          td._center 23.10.2017
           td._center._underline
             a(href="#" title="") 543
-          td._center._underline
-            a(href="#" title="") 320
-          td._center._underline
-            a(href="#" title="") 630
-          td._center._underline
-            a(href="#" title="") 15
         tr
-          td._center._underline 23.10.2017
+          td._center 23.10.2017
           td._center._underline
             a(href="#" title="") 543
-          td._center._underline
-            a(href="#" title="") 320
-          td._center._underline
-            a(href="#" title="") 630
-          td._center._underline
-            a(href="#" title="") 15
         tr
-          td._center._underline 23.10.2017
+          td._center 23.10.2017
           td._center._underline
-            a(href="#" title="") 543
-          td._center._underline
-            a(href="#" title="") 320
-          td._center._underline
-            a(href="#" title="") 630
-          td._center._underline
-            a(href="#" title="") 15
-        tr._last
-          td._center._underline Итого:
-          td._center._underline
-            a(href="#" title="") 543
-          td._center._underline
-            a(href="#" title="") 320
-          td._center._underline
-            a(href="#" title="") 630
-          td._center._underline
-            a(href="#" title="") 15                                                                                       
+            a(href="#" title="") 543                                                            
+
+
+
+
+mixin statistic-data-copyrighters-list(data)
+  .task-list
+    table.table._striped
+      thead
+        tr
+          th(width="221") Название статьи
+          th(width="75")._center ID
+          th(width="105")._center Копирайтер
+          th(width="92")._center Редактор
+          th(width="72")._center Знаков
+          th(width="99")._center Стоимость
+          th(width="108")._center Дата отправ
+          th(width="96")._center Дата прин
+          th(width="128") Статус
+          th(width="107")
+      tfoot   
+        tr
+          td Итого: 654
+      tbody
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td Анна
+            br 
+            | Гордеева
+          td 2 345
+          td._price 5 634
+            i.fa.fa-rub
+            i._green.fa.fa-check-circle-o
+          td 23.10.2017 
+            br
+            |15:02
+          td 25.10.2017 
+            br
+            |15:02
+          td._status
+            .published._green 
+              span.published__sub Опубликовано 
+              br
+              |(26.10.2016 05:30)
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td Анна
+            br 
+            | Гордеева
+          td 2 345
+          td._price 5 634
+            i.fa.fa-rub
+            i._green.fa.fa-check-circle-o
+          td 23.10.2017 
+            br
+            |15:02
+          td 25.10.2017 
+            br
+            |15:02
+          td._status
+            .published._green 
+              span.published__sub Опубликовано 
+              br
+              |(26.10.2016 05:30)
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td Анна
+            br 
+            | Гордеева
+          td 2 345
+          td._price 5 634
+            i.fa.fa-rub
+            i._green.fa.fa-check-circle-o
+          td 23.10.2017 
+            br
+            |15:02
+          td 25.10.2017 
+            br
+            |15:02
+          td._status
+            .published._green 
+              span.published__sub Опубликовано 
+              br
+              |(26.10.2016 05:30)
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td Анна
+            br 
+            | Гордеева
+          td 2 345
+          td._price 5 634
+            i.fa.fa-rub
+            i._green.fa.fa-check-circle-o
+          td 23.10.2017 
+            br
+            |15:02
+          td 25.10.2017 
+            br
+            |15:02
+          td._status
+            .published._green 
+              span.published__sub Опубликовано 
+              br
+              |(26.10.2016 05:30)
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+
+mixin statistic-data-redactors-list(data)
+  .task-list
+    table.table._striped
+      thead
+        tr
+          th(width="221") Название статьи
+          th(width="75")._center ID
+          th(width="92")._center Редактор
+          th(width="92")._center Рефов
+          th(width="72")._center Знаков
+          th(width="108")._center Дата отправки
+          th(width="96")._center Дата принятия
+          th(width="128")._center Доработки
+          th(width="107")
+      tfoot   
+        tr
+          td Итого: 654
+      tbody
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td._center 345
+          td._center 2 345
+          td 23.10.2017 
+            br
+            |15:02
+          td 25.10.2017 
+            br
+            |15:02
+          td._center 5
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td._center 345
+          td._center 2 345
+          td 23.10.2017 
+            br
+            |15:02
+          td 25.10.2017 
+            br
+            |15:02
+          td._center 5
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td._center 345
+          td._center 2 345
+          td 23.10.2017 
+            br
+            |15:02
+          td 25.10.2017 
+            br
+            |15:02
+          td._center 5
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td._center 345
+          td._center 2 345
+          td 23.10.2017 
+            br
+            |15:02
+          td 25.10.2017 
+            br
+            |15:02
+          td._center 5
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+
+mixin statistic-data-compilers-list(data)
+  .task-list
+    table.table._striped
+      thead
+        tr
+          th(width="337") Название статьи
+          th(width="95")._center ID
+          th(width="144")._center Составитель
+          th(width="106")._center Анкор
+          th(width="115")._center Тем. слов
+          th(width="182") Сайт
+          th(width="119")
+      tfoot   
+        tr
+          td Итого: 654
+      tbody
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td._center 2 345
+          td._center 2 345
+          td._center Старые советы
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td._center 2 345
+          td._center 2 345
+          td._center Старые советы
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td._center 2 345
+          td._center 2 345
+          td._center Старые советы
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td 000136
+          td Мария
+            br
+            | Иванова
+          td._center 2 345
+          td._center 2 345
+          td._center Старые советы
+          td
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Таск
+            a(href="#" title="").small-button
+              i.fa.fa-eye
+              span Задание
+
+mixin statistic-data-posters-list(data)
+  .task-list
+    table.table._striped
+      thead
+        tr
+          th(width="470") Название статьи
+          th(width="125")._center ID
+          th(width="175")._center Сайт
+          th(width="331")._center Постер
+      tfoot   
+        tr
+          td Итого: 654
+      tbody
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td._center 000136
+          td._center Старые советы
+          td._center Мария Иванова
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td._center 000136
+          td._center Старые советы
+          td._center Мария Иванова
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td._center 000136
+          td._center Старые советы
+          td._center Мария Иванова
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td._center 000136
+          td._center Старые советы
+          td._center Мария Иванова
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td._center 000136
+          td._center Старые советы
+          td._center Мария Иванова
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td._center 000136
+          td._center Старые советы
+          td._center Мария Иванова
+        tr
+          td._underline
+            a(href="#" title="") Минтай под маринадом из моркови и лука - рецепты с фото.
+          td._center 000136
+          td._center Старые советы
+          td._center Мария Иванова                                                            
+
           
+        

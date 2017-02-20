@@ -22,13 +22,13 @@
 .table {
   font-size: 14px;
   &._striped {
-    tbody {
-      tr{
-        &._last {
-          background-color: #f4f5f7;
-        }
+    tfoot {
+      tr {
+        background-color: #f4f5f7;
       }
-      tr:not(._last) {
+    }
+    tbody {
+      tr {
         td:nth-child(2n) {
           background-color: #f9fafc;
         }
@@ -77,6 +77,9 @@
           .fa {
             color: #a7b2c4;
           }
+        }
+        &._center {
+          text-align: center;
         }        
       }
     }
@@ -121,7 +124,7 @@
               color: #60a218;
               font-family: "Lato-Semibold";
             }
-        }        
+        }     
         &._composition {
           select {
             @extend .input-form;
@@ -133,6 +136,11 @@
           a {
             color: #60a218;
             font-family: "Lato-Semibold";
+          }
+        }
+        &._price {
+          ._green {
+            color: #60a218;
           }
         }
         &._active {
@@ -174,6 +182,9 @@
 .published {
   font-family: "Lato-Semibold";
   font-size: 12px;
+  &__sub {
+    font-size: 14px;
+  }
   &._green {
     color: #60a218;
   }
