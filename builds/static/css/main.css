@@ -449,6 +449,14 @@ blockquote {
   font-size: 14px;
 }
 
+.table._striped tbody tr._last {
+  background-color: #f4f5f7;
+}
+
+.table._striped tbody tr:not(._last) td:nth-child(2n) {
+  background-color: #f9fafc;
+}
+
 .table thead tr {
   background-color: #919fb3;
 }
@@ -549,6 +557,14 @@ blockquote {
 .table tbody tr td._active .fa {
   color: #82c537;
   font-size: 12px;
+}
+
+.table tbody tr td._underline a {
+  text-decoration: underline;
+}
+
+.table tbody tr td._underline a:hover {
+  text-decoration: none;
 }
 
 .table tbody tr td._control a {
@@ -665,6 +681,21 @@ input,
 textarea {
   border: none;
   outline: none;
+}
+
+.footer {
+  margin-top: 30px;
+  padding: 22px 0;
+  background-color: #273040;
+}
+
+.footer__logo {
+  background-image: url(../images/png-sprite/96dpi/sprite.png);
+  background-position: 0px 0px;
+  width: 88px;
+  height: 17px;
+  background-size: 88px, 17px;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -863,21 +894,6 @@ textarea {
 
 .task-list a:hover {
   color: #3e8cc0;
-}
-
-.footer {
-  margin-top: 30px;
-  padding: 22px 0;
-  background-color: #273040;
-}
-
-.footer__logo {
-  background-image: url(../images/png-sprite/96dpi/sprite.png);
-  background-position: 0px 0px;
-  width: 88px;
-  height: 17px;
-  background-size: 88px, 17px;
-  background-repeat: no-repeat;
 }
 
 /*!

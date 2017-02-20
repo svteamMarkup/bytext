@@ -21,6 +21,20 @@
 
 .table {
   font-size: 14px;
+  &._striped {
+    tbody {
+      tr{
+        &._last {
+          background-color: #f4f5f7;
+        }
+      }
+      tr:not(._last) {
+        td:nth-child(2n) {
+          background-color: #f9fafc;
+        }
+      }
+    }
+  }
   thead {
     tr {
       background-color: #919fb3;
@@ -125,6 +139,14 @@
           .fa {
             color: #82c537;
             font-size: 12px;
+          }
+        }
+        &._underline {
+          a {
+            text-decoration: underline;
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
         &._control {
