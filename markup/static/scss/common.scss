@@ -6,3 +6,8 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: #f3f5f9;
 }
+input,
+textarea {
+	border: none;
+	outline: none;
+}

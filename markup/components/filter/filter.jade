@@ -1,2 +1,36 @@
 mixin filter(data)
-  .filter
+	.filter
+
+mixin filter-date(data)
+	.filter
+	form(method="GET" action="").filter-date
+		.filter__row
+			.filter-block
+				label.filter__label Выбрать даты
+				a: i.fa.fa-calendar
+				input(type="text" value="" placeholder="10.11.2016").filter-block__input._select-date
+				input(type="text" value="" placeholder="10.11.2016").filter-block__input._select-date
+				input(type="submit" value="Ok").filter-block__simple-button._ok
+			.filter-block
+				.filter-block__label Запросы 34
+				.filter-block__label Назначить задания
+				.filter-block__label Запросы 34
+		.filter__row
+			.filter-block
+				.filter-block__label На модерации <strong>34</strong>
+				.filter-block__label Новое <strong>34</strong>
+				.filter-block__label Выполняется <strong>34</strong>
+				.filter-block__label На проверке <strong>34</strong>
+				.filter-block__label На доработке <strong>34</strong>
+				.filter-block__label Выполнено <strong>34</strong>
+				.filter-block__label Опубликовано <strong>34</strong>
+		.filter__row
+			.filter-block
+				label.filter__label Поиск
+					input(type="text" value="").filter-block__input._search
+					input(type="submit" value="Ok").filter-block__simple-button._search.fa.fa-search
+			.filter-block
+				label.filter__label Проект
+				select(type="text" value="").filter-block__select._search
+					option 1
+					option 2
