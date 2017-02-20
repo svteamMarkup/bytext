@@ -101,7 +101,20 @@
         &._oklad {
           color: #333;
           font-family: "Lato-Semibold";
+        }
+        &._compiler {
+            a { 
+              color: #60a218;
+              font-family: "Lato-Semibold";
+            }
         }        
+        &._composition {
+          select {
+            @extend .input-form;
+            width: 100%;
+            height: 26px;
+          }
+        }  
         &._refovod {
           a {
             color: #60a218;
@@ -221,4 +234,5 @@
 .input-form {
   border: 1px solid #ccc;
   box-sizing: border-box;
+  box-shadow: 0 2px 1px rgba(0,0,0,.07) inset;
 }
