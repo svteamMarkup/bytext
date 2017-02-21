@@ -1,0 +1,27 @@
+.tabs {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 14px;
+	&__item {
+		padding-right: 40px;
+		font-size: 15px;
+		font-family: 'Lato-Medium';
+		&._first {
+			margin-left: 19px;
+		}
+		span {
+			color: #414852;
+		}
+		a {
+			border-bottom: 1px dashed #2d7baf;
+			text-decoration: none;
+			color: #2d7baf;
+		    &:hover {
+		      color: #2d7baf + #111;
+		    }
+		}
+		strong {
+			margin-left: 5px;
+		}
+	}
+}

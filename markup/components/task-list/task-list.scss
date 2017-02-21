@@ -9,3 +9,30 @@
     }
   }
 }
+
+.task-list-show-themes {
+	padding: 15px 21px 15px 14px;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(#000,.28);
+	position: absolute;
+	display: none;
+	top: 39px;
+	._caret-up {
+		position: absolute;
+		top: -17px;
+		color: #fff;
+		font-size: 23px;
+		text-shadow: 0 -2px 5px rgba(#000,.28);
+		left: 3px;
+	}
+	&__item {
+		font-size: 13px;
+		margin-bottom: 7px;
+		&._last {
+			margin-bottom: 0;
+		}
+		a {
+			margin-right: 5px;
+		}
+	}
+}

@@ -1,6 +1,8 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
-
+a {
+  @include transition;
+}
 .wrapper {
   width: 1285px;
   margin: auto;
@@ -141,6 +143,12 @@
         &._price {
           ._green {
             color: #60a218;
+          }
+        }
+        &._theme{
+          position: relative;
+          &:hover .task-list-show-themes {
+            display: block;
           }
         }
         &._active {

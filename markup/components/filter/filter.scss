@@ -1,3 +1,243 @@
 .filter {
+	background-color: #fff;
+	margin-bottom: 20px;
+	box-shadow: 0 0 5px rgba(#000,.28);
+	border-left: 2px solid #7bc22c;
 
+	&__inner {
+		padding: 20px 11px 20px 17px;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 19px;
+		&._last {
+			margin-bottom: 0;
+		}
+		&._theme {
+			margin-bottom: 0;
+		}
+		&._lists {
+			justify-content: flex-start;
+		}
+	}
+	&__label {
+		font-size: 14px;
+		color: #414852;
+		&._big {
+			font-size: 18px;
+			text-transform: uppercase;
+			font-family: 'Lato-Semibold';
+		}
+	}
+}
+.filter-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&._control-tasks {
+		width: 472px;
+	}
+	&._unflex {
+  		display: block;
+	}
+	&._request {
+		margin-left: 20px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__calendar {
+		border: 1px solid #ccc;
+		line-height: 25px;
+		width: 28px;
+		text-align: center;
+		color: inherit;
+		margin-left: 10px;
+		margin-right: 7px;
+	}
+	&__select-date-input {
+		@extend .input-form;
+		width: 86px;
+		line-height: 24px;
+		font-size: 14px;
+		margin-right: 5px;
+		padding-left: 4px;
+	}
+	&__simple-button {
+		line-height: 26px;
+		width: 30px;
+		cursor: pointer;
+		font-size: 12px;
+		color: #414852;
+		text-align: center;
+		background: linear-gradient(to bottom,  #f3f3f3 0%, #ededed 100%);
+		border: 1px solid #ccc;
+		@include transition;
+		&:hover {
+			background: linear-gradient(to bottom, #ededed 0%, #f3f3f3 100%);
+		}
+	}
+	&__label {
+		line-height: 28px;
+		border: 1px solid #ccc;
+		text-align: center;
+		font-size: 14px;
+		color: #414852;
+		background-color: #fff;
+		text-decoration: none;
+		box-shadow: 0 1px 1px rgba(#000,.2);
+		@include transition;
+		&:hover:not(._not-click) {
+			background-color: #f1f2f3;
+		}
+		&._not-click {
+			cursor: default;
+		}
+		&._active {
+			background-color: #f1f2f3;
+		}
+		&._green {
+			background-color: #82c537;
+			color: #fff;
+			border-left: 3px solid #75b233;
+			&:hover {
+				background-color: darken(#82c537, 5%);
+			}
+		}
+		&._blue {
+			background-color: #56b5f5;
+			color: #fff;
+			border-left: 3px solid #4ea4dd;
+			&:hover {
+				background-color: darken(#56b5f5, 5%);
+			}
+		}
+		&._small {
+			width: 126px;
+		}
+		&._middle {
+			width: 128px;
+			line-height: 38px;
+		}		
+		&._big {
+			width: 153px;
+			line-height: 28px;
+		}
+		&._xbig {
+			width: 193px;
+			line-height: 40px;
+		}
+		&._large {
+			padding-left: 25px;
+			padding-right: 25px;
+			line-height: 28px;
+		}
+	}
+	&__search-input {
+		@extend .input-form;
+		width: 640px;
+		line-height: 26px;
+		margin-left: 8px;
+		&._small {
+			width: 317px;
+		}
+		&._middle {
+			width: 478px;
+			line-height: 38px;
+		}
+	}
+	&__search-wrapper {
+		position: relative;
+		display: inline-block;
+	    line-height: 1;
+	    vertical-align: middle;		
+		.fa {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+		}
+	}
+	&__select {
+		@extend .input-form;
+		width: 266px;
+		height: 30px;
+		margin-left: 8px;
+		font-size: 13px;
+		padding-left: 9px;
+		color: #666;
+		&._small {
+			width: 131px;
+		}
+		&._middle {
+			width: 260px;
+		}
+	}
+	&__title {
+		font-size: 14px;
+		margin-bottom: 3px;
+		span {
+			font-size: 12px;
+			color: #909090;
+			margin-left: 14px;
+		}
+	}
+}
+.filter-block-vip {
+	padding: 10px 12px;
+	background-color: #f3f5f9;
+	margin-left: 20px;
+	margin-right: 46px;
+	&__checkbox {
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+	&__sticker {
+		color: #fff;
+    	background-color: #ff9600;
+		text-align: center;
+		padding: 7px 11px;
+	    border-radius: 3px;
+	    font-family: "Lato-Bold";
+	    border-radius: 5px;
+	    font-size: 12px;
+	    line-height: 1;    	
+	}
+}
+.filter-block-list {
+	margin-right: 20px;
+	&:last-child {
+		margin-right: 0;
+	}
+	&__item {
+		display: flex;
+		justify-content: flex-start;
+		border-bottom: 1px dashed #ccc;
+		padding: 5px 0;
+		font-size: 14px;
+		.fa {
+			color: #919fb3;
+		}	
+		a {
+			text-decoration: none;
+    		color: #2d7baf;
+    	}
+	}
+	&__link {
+		margin-left: 6px;
+	}
+	&__left {
+		width: 200px;
+	}	
+	&__right {
+		margin-left: 88px;
+	}
+	&__sub {
+		font-size: 14px;
+		color: #999;
+	}
 }
