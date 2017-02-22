@@ -82,7 +82,43 @@
                     </a><a href="#" title="" class="menu__item"><i class="fa fa-cog"></i><span>Настройки</span></a>
             </div>
             <div class="content">
-                <!--+filter-date-->
+                <form method="GET" action="" class="filter">
+                    <div class="filter__inner">
+                        <div class="filter__row">
+                            <div class="filter-block">
+                                <label class="filter__label">Выбрать даты</label><a href="#" title="" class="filter-block__calendar"><i class="fa fa-calendar"></i></a>
+                                <input type="text" value="" placeholder="10.11.2016" class="filter-block__select-date-input">
+                                <input type="text" value="" placeholder="10.11.2016" class="filter-block__select-date-input">
+                                <input type="submit" value="Ок" class="filter-block__simple-button _ok">
+                            </div>
+                            <div class="filter-block _control-tasks">
+                                <div class="filter-block__label _small _not-click">Запросы <strong>34</strong>
+                                </div><a href="#" title="" class="filter-block__label _big">Назначить задания</a><a href="#" title="" class="filter-block__label _big _green">Добавить задание</a>
+                            </div>
+                        </div>
+                        <div class="filter__row">
+                            <div class="filter-block"><a href="#" title="" class="filter-block__label _large _active">На модерации <strong>34</strong></a><a href="#" title="" class="filter-block__label _large">Новое <strong>34</strong></a><a href="#" title="" class="filter-block__label _large">Выполняется <strong>34</strong></a>
+                                <a
+                                href="#" title="" class="filter-block__label _large">На проверке <strong>34</strong>
+                                    </a><a href="#" title="" class="filter-block__label _large">На доработке <strong>34</strong></a><a href="#" title="" class="filter-block__label _large">Выполнено <strong>34</strong></a><a href="#" title="" class="filter-block__label _large">Опубликовано <strong>34</strong></a>
+                            </div>
+                        </div>
+                        <div class="filter__row _last">
+                            <div class="filter-block">
+                                <label class="filter__label">Поиск
+                                    <input type="text" value="" class="filter-block__search-input">
+                                    <div class="filter-block__search-wrapper">
+                                        <input type="submit" value="" class="filter-block__simple-button _search"><i class="fa fa-search"></i>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="filter-block">
+                                <label class="filter__label">Проект</label>
+                                <select type="text" value="" class="filter-block__select"></select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
                 <div class="task-list">
                     <table class="table">
                         <thead>

@@ -82,7 +82,43 @@
                     </a><a href="#" title="" class="menu__item"><i class="fa fa-cog"></i><span>Настройки</span></a>
             </div>
             <div class="content">
-                <!--+filter-date-->
+                <form method="GET" action="" class="filter">
+                    <div class="filter__inner">
+                        <div class="filter__row _theme">
+                            <div class="filter-block">
+                                <label class="filter__label">Тематики</label>
+                                <select type="text" value="" class="filter-block__select _middle">
+                                    <option>Все тематики (350)</option>
+                                    <option>хз</option>
+                                </select>
+                            </div>
+                            <label class="filter__label">Поиск
+                                <input type="text" value="" class="filter-block__search-input _small">
+                                <select type="text" value="" class="filter-block__select _small">
+                                    <option>по имени</option>
+                                    <option>хз</option>
+                                </select>
+                                <div class="filter-block__search-wrapper">
+                                    <input type="submit" value="" class="filter-block__simple-button _search"><i class="fa fa-search"></i>
+                                </div>
+                            </label><a href="#" title="" class="filter-block__label _big _green">Добавить</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="tabs">
+                    <div class="tabs__list">
+                        <div class="tabs__item _first"><span>Копирайтеры</span><strong>34</strong>
+                        </div>
+                        <div class="tabs__item"><a href="#" title="">Редактора</a><strong>9</strong>
+                        </div>
+                        <div class="tabs__item"><a href="#" title="">Составители</a><strong>31</strong>
+                        </div>
+                        <div class="tabs__item"><a href="#" title="">Семантисты</a><strong>50</strong>
+                        </div>
+                        <div class="tabs__item"><a href="#" title="">Постеры</a><strong>5</strong>
+                        </div>
+                    </div>
+                </div>
                 <div class="task-list">
                     <table class="table">
                         <thead>
@@ -115,8 +151,24 @@
                                 <td class="_center">5</td>
                                 <td class="_refovod"> <a href="#" title="">Admin<i class="fa fa-angle-down"></i></a>
                                 </td>
-                                <td> <i class="fa fa-eye"></i>Шоппинг, Обувь</td>
-                                <td class="_active"> <i class="fa fa-circle"></i> Активный</td>
+                                <td class="_theme"><i class="fa fa-eye"></i>Шоппинг, Обувь
+                                    <div class="task-list-show-themes">
+                                        <div class="_caret-up fa fa-caret-up"></div>
+                                        <div class="task-list-show-themes__item"><i class="fa fa-angle-right"></i><a href="#" title="">Здоровье</a><strong>9</strong>
+                                        </div>
+                                        <div class="task-list-show-themes__item"><i class="fa fa-angle-right"></i><a href="#" title="">Лечебные диеты</a><strong>10</strong>
+                                        </div>
+                                        <div class="task-list-show-themes__item"><i class="fa fa-angle-right"></i><a href="#" title="">Гастроэнтерология</a><strong>5</strong>
+                                        </div>
+                                        <div class="task-list-show-themes__item"><i class="fa fa-angle-right"></i><a href="#" title="">Дерматология</a><strong>3</strong>
+                                        </div>
+                                        <div class="task-list-show-themes__item"><i class="fa fa-angle-right"></i><a href="#" title="">Неврология</a><strong>8</strong>
+                                        </div>
+                                        <div class="task-list-show-themes__item _last"><i class="fa fa-angle-right"></i><a href="#" title="">Пульмонология</a><strong>4</strong>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="_active"><i class="fa fa-circle"></i> Активный</td>
                                 <td class="_control"> <a href="#" title=""><i class="fa fa-pencil"></i></a><a href="#" title=""><i class="fa fa-sign-in"></i></a><a href="#" title=""><i class="fa fa-ban"></i></a><a href="#" title=""><i class="fa fa-trash-o">                                           </i></a>
                                 </td>
                             </tr>
