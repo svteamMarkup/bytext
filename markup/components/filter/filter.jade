@@ -60,7 +60,7 @@ mixin filter-request(data)
 			.filter__row
 				.filter-block
 					label.filter__label._big Запрос
-						input(type="text" value="").filter-block__search-input._middle
+						input(type="text" value="").filter-block__search-input._middle._request
 						input(type="submit" value="Отправить").filter-block__label._middle._blue
 					.filter-block-vip
 						input(type="checkbox" checked).filter-block-vip__checkbox
@@ -125,17 +125,49 @@ mixin filter-request(data)
 									i.fa.fa-user
 									a(href="#" title="").filter-block-list__link Анастасия Осипова
 								.filter-block-list__right
-									| 5 <span class="filter-block-list__sub">(11)</span>							
+									| 5 <span class="filter-block-list__sub">(11)</span>
 							.filter-block-list__item
 								.filter-block-list__left
 									i.fa.fa-user
 									a(href="#" title="").filter-block-list__link Мария Соболева
 								.filter-block-list__right
-									| 5 <span class="filter-block-list__sub">(465)</span>					
-			.filter__row
-				.filter-block
+									| 5 <span class="filter-block-list__sub">(465)</span>
+			.filter__row._last
+				.filter-block._unflex
 					label.filter__label Поиск
-					input(type="text" value="").filter-block__search-input
-					.filter-block__search-wrapper
+					input(type="text" value="").filter-block__search-input._big._nomargin
+					.filter-block__search-wrapper._silver
 						input(type="submit" value="").filter-block__simple-button._search
-						i.fa.fa-search				
+						i.fa.fa-search
+				.filter-block._unflex
+					label.filter__label Статус
+					select(type="text" value="").filter-block__select._xsmall._nomargin
+				.filter-block._unflex
+					label.filter__label Сайты
+					select(type="text" value="").filter-block__select._big._nomargin
+
+mixin filter-statistic(data)
+	form(method="GET" action="").filter
+		.filter__inner
+			.filter__row._statistic
+				.filter-block._unflex._statistic-search
+					label.filter__label Поиск
+					input(type="text" value="").filter-block__search-input._small._nomargin
+					.filter-block__search-wrapper._silver
+						input(type="submit" value="").filter-block__simple-button._search
+						i.fa.fa-search
+				.filter-block._unflex._statistic-sites
+					label.filter__label Сайты
+					select(type="text" value="").filter-block__select._xsmall._nomargin
+				.filter-block._unflex._statistic-date
+					label.filter__label Выбрать даты
+					.filter-block__inner
+						a(href="#" title="").filter-block__calendar._nomargin
+							i.fa.fa-calendar
+						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
+						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
+						input(type="submit" value="Ок").filter-block__simple-button._ok
+				.filter-block
+					a(href="#" title="").filter-block__label._big._statistic
+						i.fa.fa-star
+						span Рейтинг

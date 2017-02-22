@@ -1,7 +1,12 @@
 .tabs {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	margin-bottom: 14px;
+	align-items: center;
+	&__list {
+		display: flex;
+		justify-content: flex-start;		
+	}
 	&__item {
 		padding-right: 40px;
 		font-size: 15px;
@@ -23,5 +28,46 @@
 		strong {
 			margin-left: 5px;
 		}
+	}
+}
+.tabs-right {
+	display: flex;
+	justify-content: flex-start;
+	line-height: 1;
+	font-size: 14px;
+	color: #414852;
+	&__button {
+		line-height: 26px;
+	    border: 1px solid #ccc;
+	    text-align: center;
+	    background-color: #fff;
+	    text-decoration: none;
+	    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	    @include transition;
+	    &:hover {
+	    	background-color: darken(#f1f2f3, 5%);
+	    }	    
+	}
+	&__delete {
+		position: relative;
+		margin-left: 4px;
+		.fa {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+		}
+	}
+	&__simple-button {
+	    line-height: 26px;
+	    width: 30px;
+	    cursor: pointer;
+	    text-align: center;
+	    background: linear-gradient(to bottom, #f3f3f3 0%, #ededed 100%);
+	    border: 1px solid #ccc;
+	    @include transition;
+	    background-color: #fff;
+	    &:hover {
+	    	background: linear-gradient(to bottom, #ededed 0%, #f3f3f3 100%);
+	    }
 	}
 }

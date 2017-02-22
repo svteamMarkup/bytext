@@ -1,17 +1,24 @@
-mixin tabs(data)
-  .tabs
-    .tabs__item._first
-        span Копирайтеры
-        strong 34
-    .tabs__item
-        a(href="#" title="") Редактора
-        strong 9
-    .tabs__item
-        a(href="#" title="") Составители
-        strong 31
-    .tabs__item
-        a(href="#" title="") Семантисты
-        strong 50
-    .tabs__item
-        a(href="#" title="") Постеры
-        strong 5
+mixin tabs(tabs_right)
+	.tabs
+		.tabs__list
+			.tabs__item._first
+				span Копирайтеры
+				strong 34
+			.tabs__item
+				a(href="#" title="") Редактора
+				strong 9
+			.tabs__item
+				a(href="#" title="") Составители
+				strong 31
+			.tabs__item
+				a(href="#" title="") Семантисты
+				strong 50
+			.tabs__item
+				a(href="#" title="") Постеры
+				strong 5
+		-if(tabs_right == true)
+			.tabs-right
+				input(type="submit" value="Назначить задания").tabs-right__button
+				.tabs-right__delete
+					input(type="submit" value="").tabs-right__simple-button
+					i.fa.fa-trash-o
