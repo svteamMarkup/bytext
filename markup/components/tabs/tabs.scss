@@ -1,16 +1,20 @@
 .tabs {
 	display: flex;
-	justify-content: space-between;
+
 	margin-bottom: 14px;
+
 	align-items: center;
+	justify-content: space-between;
 	&__list {
 		display: flex;
-		justify-content: flex-start;		
+
+		justify-content: flex-start;
 	}
 	&__item {
 		padding-right: 40px;
+
+		font-family: "Lato-Medium";
 		font-size: 15px;
-		font-family: 'Lato-Medium';
 		&._first {
 			margin-left: 19px;
 		}
@@ -19,11 +23,6 @@
 		}
 		a {
 			border-bottom: 1px dashed #2d7baf;
-			text-decoration: none;
-			color: #2d7baf;
-		    &:hover {
-		      color: #2d7baf + #111;
-		    }
 		}
 		strong {
 			margin-left: 5px;
@@ -32,24 +31,31 @@
 }
 .tabs-right {
 	display: flex;
-	justify-content: flex-start;
-	line-height: 1;
-	font-size: 14px;
+
 	color: #414852;
+
+	font-size: 14px;
+	line-height: 1;
+
+	justify-content: flex-start;
 	&__button {
+		text-align: center;
+		text-decoration: none;
+
+		border: 1px solid #ccc;
+		background-color: #fff;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+
 		line-height: 26px;
-	    border: 1px solid #ccc;
-	    text-align: center;
-	    background-color: #fff;
-	    text-decoration: none;
-	    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-	    @include transition;
-	    &:hover {
-	    	background-color: darken(#f1f2f3, 5%);
-	    }	    
+
+		@include transition;
+		&:hover {
+			background-color: darken(#f1f2f3, 5%);
+		}
 	}
 	&__delete {
 		position: relative;
+
 		margin-left: 4px;
 		.fa {
 			position: absolute;
@@ -58,16 +64,20 @@
 		}
 	}
 	&__simple-button {
-	    line-height: 26px;
-	    width: 30px;
-	    cursor: pointer;
-	    text-align: center;
-	    background: linear-gradient(to bottom, #f3f3f3 0%, #ededed 100%);
-	    border: 1px solid #ccc;
-	    @include transition;
-	    background-color: #fff;
-	    &:hover {
-	    	background: linear-gradient(to bottom, #ededed 0%, #f3f3f3 100%);
-	    }
+		width: 30px;
+
+		cursor: pointer;
+		text-align: center;
+
+		border: 1px solid #ccc;
+		background: linear-gradient(to bottom, #f3f3f3 0%, #ededed 100%);
+		background-color: #fff;
+
+		line-height: 26px;
+
+		@include transition;
+		&:hover {
+			background: linear-gradient(to bottom, #ededed 0%, #f3f3f3 100%);
+		}
 	}
 }

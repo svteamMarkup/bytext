@@ -5,11 +5,10 @@
   background-color: #fff;
   box-shadow: 0 0 5px rgba(#000, .28);
   &__wrapper {
-    @extend .main;
-
     display: flex;
 
     align-items: center;
+    @extend .main;
     justify-content: stretch;
   }
   &__logo {
@@ -24,12 +23,13 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      @include bg($logo);
 
       display: block;
 
       transform: translate(-50%,-50%);
       text-indent: -9999px;
+
+      @include bg($logo);
     }
   }
 }

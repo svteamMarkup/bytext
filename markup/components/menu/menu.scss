@@ -21,6 +21,7 @@
     font-size: 14px;
     &:hover,
     &._active {
+      color: inherit;
       border-left-color: #7bc22c;
       background-color: #f0f1f2;
     };

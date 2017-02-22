@@ -82,21 +82,36 @@
                     </a><a href="#" title="" class="menu__item"><i class="fa fa-cog"></i><span>Настройки</span></a>
             </div>
             <div class="content">
-                <!--+filter-date-->
-                <div class="tabs">
-                    <div class="tabs__list">
-                        <div class="tabs__item _first"><span>Копирайтеры</span><strong>34</strong>
-                        </div>
-                        <div class="tabs__item"><a href="#" title="">Редактора</a><strong>9</strong>
-                        </div>
-                        <div class="tabs__item"><a href="#" title="">Составители</a><strong>31</strong>
-                        </div>
-                        <div class="tabs__item"><a href="#" title="">Семантисты</a><strong>50</strong>
-                        </div>
-                        <div class="tabs__item"><a href="#" title="">Постеры</a><strong>5</strong>
+                <form method="GET" action="" class="filter">
+                    <div class="filter__inner">
+                        <div class="filter__row _statistic">
+                            <div class="filter-block _unflex _statistic-user">
+                                <div class="filter__label _big">Статистика редакторов</div>
+                                <div class="filter-block__goto-back"><i class="fa fa-angle-left"></i><a href="#" title="">назад</a>
+                                </div>
+                            </div>
+                            <div class="filter-block _unflex _statistic-user-search">
+                                <label class="filter__label">Поиск</label>
+                                <input type="text" value="" class="filter-block__search-input _little _nomargin">
+                                <select type="text" value="" class="filter-block__select _small">
+                                    <option>по имени</option>
+                                    <option>хз</option>
+                                </select>
+                                <div class="filter-block__search-wrapper">
+                                    <input type="submit" value="" class="filter-block__simple-button _search"><i class="fa fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="filter-block _unflex">
+                                <label class="filter__label">Выбрать даты</label>
+                                <div class="filter-block__inner"><a href="#" title="" class="filter-block__calendar _nomargin"><i class="fa fa-calendar"></i></a>
+                                    <input type="text" value="" placeholder="10.11.2016" class="filter-block__select-date-input">
+                                    <input type="text" value="" placeholder="10.11.2016" class="filter-block__select-date-input">
+                                    <input type="submit" value="Ок" class="filter-block__simple-button _ok">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
                 <div class="task-list">
                     <table class="table _striped">
                         <thead>
@@ -122,89 +137,89 @@
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
-                                <td>Анна
+                                <td class="_padding">Анна
                                     <br>Гордеева</td>
-                                <td>2 345</td>
-                                <td class="_price">5 634<i class="fa fa-rub"></i><i class="_green fa fa-check-circle-o"></i>
+                                <td class="_center">2 345</td>
+                                <td class="_center _price">5 634<i class="fa fa-rub"></i><i class="_green fa fa-check-circle-o"></i>
                                 </td>
-                                <td>23.10.2017
+                                <td class="_padding">23.10.2017
                                     <br>15:02</td>
-                                <td>25.10.2017
+                                <td class="_padding">25.10.2017
                                     <br>15:02</td>
-                                <td class="_status">
+                                <td class="_status _center">
                                     <div class="published _green"> <span class="published__sub">Опубликовано </span>
                                         <br>(26.10.2016 05:30)</div>
                                 </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
-                                <td>Анна
+                                <td class="_padding">Анна
                                     <br>Гордеева</td>
-                                <td>2 345</td>
-                                <td class="_price">5 634<i class="fa fa-rub"></i><i class="_green fa fa-check-circle-o"></i>
+                                <td class="_center">2 345</td>
+                                <td class="_center _price">5 634<i class="fa fa-rub"></i><i class="_green fa fa-check-circle-o"></i>
                                 </td>
-                                <td>23.10.2017
+                                <td class="_padding">23.10.2017
                                     <br>15:02</td>
-                                <td>25.10.2017
+                                <td class="_padding">25.10.2017
                                     <br>15:02</td>
-                                <td class="_status">
+                                <td class="_center _status">
                                     <div class="published _green"> <span class="published__sub">Опубликовано </span>
                                         <br>(26.10.2016 05:30)</div>
                                 </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
-                                <td>Анна
+                                <td class="_padding">Анна
                                     <br>Гордеева</td>
-                                <td>2 345</td>
-                                <td class="_price">5 634<i class="fa fa-rub"></i><i class="_green fa fa-check-circle-o"></i>
+                                <td class="_center">2 345</td>
+                                <td class="_center _price">5 634<i class="fa fa-rub"></i><i class="_green fa fa-check-circle-o"></i>
                                 </td>
-                                <td>23.10.2017
+                                <td class="_padding">23.10.2017
                                     <br>15:02</td>
-                                <td>25.10.2017
+                                <td class="_padding">25.10.2017
                                     <br>15:02</td>
-                                <td class="_status">
+                                <td class="_center _status">
                                     <div class="published _green"> <span class="published__sub">Опубликовано </span>
                                         <br>(26.10.2016 05:30)</div>
                                 </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
-                                <td>Анна
+                                <td class="_padding">Анна
                                     <br>Гордеева</td>
-                                <td>2 345</td>
-                                <td class="_price">5 634<i class="fa fa-rub"></i><i class="_green fa fa-check-circle-o"></i>
+                                <td class="_center">2 345</td>
+                                <td class="_center _price">5 634<i class="fa fa-rub"></i><i class="_green fa fa-check-circle-o"></i>
                                 </td>
-                                <td>23.10.2017
+                                <td class="_padding">23.10.2017
                                     <br>15:02</td>
-                                <td>25.10.2017
+                                <td class="_padding">25.10.2017
                                     <br>15:02</td>
-                                <td class="_status">
+                                <td class="_center _status">
                                     <div class="published _green"> <span class="published__sub">Опубликовано </span>
                                         <br>(26.10.2016 05:30)</div>
                                 </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                         </tbody>
@@ -234,65 +249,65 @@
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
                                 <td class="_center">345</td>
                                 <td class="_center">2 345</td>
-                                <td>23.10.2017
+                                <td class="_padding">23.10.2017
                                     <br>15:02</td>
-                                <td>25.10.2017
+                                <td class="_padding">25.10.2017
                                     <br>15:02</td>
                                 <td class="_center">5</td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
                                 <td class="_center">345</td>
                                 <td class="_center">2 345</td>
-                                <td>23.10.2017
+                                <td class="_padding">23.10.2017
                                     <br>15:02</td>
-                                <td>25.10.2017
+                                <td class="_padding">25.10.2017
                                     <br>15:02</td>
                                 <td class="_center">5</td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
                                 <td class="_center">345</td>
                                 <td class="_center">2 345</td>
-                                <td>23.10.2017
+                                <td class="_padding">23.10.2017
                                     <br>15:02</td>
-                                <td>25.10.2017
+                                <td class="_padding">25.10.2017
                                     <br>15:02</td>
                                 <td class="_center">5</td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
                                 <td class="_center">345</td>
                                 <td class="_center">2 345</td>
-                                <td>23.10.2017
+                                <td class="_padding">23.10.2017
                                     <br>15:02</td>
-                                <td>25.10.2017
+                                <td class="_padding">25.10.2017
                                     <br>15:02</td>
                                 <td class="_center">5</td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                         </tbody>
@@ -320,49 +335,49 @@
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
                                 <td class="_center">2 345</td>
                                 <td class="_center">2 345</td>
                                 <td class="_center">Старые советы</td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
                                 <td class="_center">2 345</td>
                                 <td class="_center">2 345</td>
                                 <td class="_center">Старые советы</td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
                                 <td class="_center">2 345</td>
                                 <td class="_center">2 345</td>
                                 <td class="_center">Старые советы</td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="_underline"><a href="#" title="">Минтай под маринадом из моркови и лука - рецепты с фото.</a>
                                 </td>
-                                <td>000136</td>
-                                <td>Мария
+                                <td class="_center">000136</td>
+                                <td class="_padding">Мария
                                     <br>Иванова</td>
                                 <td class="_center">2 345</td>
                                 <td class="_center">2 345</td>
                                 <td class="_center">Старые советы</td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button"><i class="fa fa-eye"></i><span>Задание</span></a>
+                                <td><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Таск</span></a><a href="#" title="" class="small-button _center"><i class="fa fa-eye"></i><span>Задание</span></a>
                                 </td>
                             </tr>
                         </tbody>

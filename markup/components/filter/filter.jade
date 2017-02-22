@@ -83,7 +83,7 @@ mixin filter-request(data)
 									i.fa.fa-user
 									a(href="#" title="").filter-block-list__link Анастасия Осипова
 								.filter-block-list__right
-									| 5 <span class="filter-block-list__sub">(11)</span>							
+									| 5 <span class="filter-block-list__sub">(11)</span>
 							.filter-block-list__item
 								.filter-block-list__left
 									i.fa.fa-user
@@ -171,3 +171,30 @@ mixin filter-statistic(data)
 					a(href="#" title="").filter-block__label._big._statistic
 						i.fa.fa-star
 						span Рейтинг
+
+mixin filter-statistic-user(data)
+	form(method="GET" action="").filter
+		.filter__inner
+			.filter__row._statistic
+				.filter-block._unflex._statistic-user
+					.filter__label._big Статистика редакторов
+					.filter-block__goto-back
+						i.fa.fa-angle-left
+						a(href="#" title="") назад
+				.filter-block._unflex._statistic-user-search
+					label.filter__label Поиск
+					input(type="text" value="").filter-block__search-input._little._nomargin
+					select(type="text" value="").filter-block__select._small
+						option по имени
+						option хз
+					.filter-block__search-wrapper
+						input(type="submit" value="").filter-block__simple-button._search
+						i.fa.fa-search
+				.filter-block._unflex
+					label.filter__label Выбрать даты
+					.filter-block__inner
+						a(href="#" title="").filter-block__calendar._nomargin
+							i.fa.fa-calendar
+						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
+						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
+						input(type="submit" value="Ок").filter-block__simple-button._ok											

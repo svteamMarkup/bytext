@@ -1,33 +1,31 @@
 .task-list {
-  box-shadow: 0 0 5px rgba(#000, .28);
-  a {
-    text-decoration: none;
-
-    color: #2d7baf;
-    &:hover {
-      color: #2d7baf + #111;
-    }
-  }
+	box-shadow: 0 0 5px rgba(#000, .28);
 }
 
 .task-list-show-themes {
-	padding: 15px 21px 15px 14px;
+	position: absolute;
+	top: 39px;
+
+	display: none;
+
+	padding: 15px 17px 15px 14px;
+
 	background-color: #fff;
 	box-shadow: 0 0 5px rgba(#000,.28);
-	position: absolute;
-	display: none;
-	top: 39px;
 	._caret-up {
 		position: absolute;
 		top: -17px;
-		color: #fff;
-		font-size: 23px;
-		text-shadow: 0 -2px 5px rgba(#000,.28);
 		left: 3px;
+
+		color: #fff;
+		text-shadow: 0 -2px 5px rgba(#000,.28);
+
+		font-size: 23px;
 	}
 	&__item {
-		font-size: 13px;
 		margin-bottom: 7px;
+
+		font-size: 13px;
 		&._last {
 			margin-bottom: 0;
 		}
