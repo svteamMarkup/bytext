@@ -172,6 +172,29 @@ mixin filter-statistic(data)
 						i.fa.fa-star
 						span Рейтинг
 
+mixin filter-statistic-redaktor(data)
+	form(method="GET" action="").filter
+		.filter__inner
+			.filter__row._statistic-redaktor
+				.filter-block._unflex._statistic-redaktor-search
+					label.filter__label Поиск
+					input(type="text" value="").filter-block__search-input._xsmall._nomargin
+					.filter-block__search-wrapper._silver
+						input(type="submit" value="").filter-block__simple-button._search
+						i.fa.fa-search
+				.filter-block._unflex._statistic-redaktor-sites
+					label.filter__label Сайты
+					select(type="text" value="").filter-block__select._xmiddle._nomargin
+				.filter-block._unflex
+					label.filter__label Выбрать даты
+					.filter-block__inner
+						a(href="#" title="").filter-block__calendar._nomargin
+							i.fa.fa-calendar
+						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
+						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
+						input(type="submit" value="Ок").filter-block__simple-button._ok
+					
+
 mixin filter-statistic-user(data)
 	form(method="GET" action="").filter
 		.filter__inner
@@ -198,3 +221,19 @@ mixin filter-statistic-user(data)
 						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
 						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
 						input(type="submit" value="Ок").filter-block__simple-button._ok											
+
+mixin filter-statistic-date(data)
+	form(method="GET" action="").filter
+		.filter__inner
+			.filter__row._statistic
+				.filter-block._unflex._statistic-za
+					.filter__label._big Статистика за 11.10.2016-12.12.2016
+				.filter-block
+					label.filter__label._statistic-za Выбрать даты
+					.filter-block__inner
+						a(href="#" title="").filter-block__calendar._nomargin
+							i.fa.fa-calendar
+						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
+						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
+						input(type="submit" value="Ок").filter-block__simple-button._ok		
+						

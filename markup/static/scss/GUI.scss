@@ -23,6 +23,9 @@ a {
 
 .content {
   width: 1097px;
+  &._full-width {
+    width: 100%;
+  }
 }
 
 .table {
@@ -216,6 +219,9 @@ a {
   &__sub {
     font-size: 14px;
   }
+  &._big {
+    font-size: 14px;
+  }
   &._green {
     color: #60a218;
   }
@@ -230,6 +236,10 @@ a {
   }
 }
 
+.small-text {
+  font-size: 12px;
+}
+
 .small-button {
   display: block;
 
@@ -237,7 +247,7 @@ a {
   width: 80px;
   height: 24px;
   margin-bottom: 4px;
-  padding-left: 7px;
+  padding-left: 2px;
 
   text-transform: uppercase;
 

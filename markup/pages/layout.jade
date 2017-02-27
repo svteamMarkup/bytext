@@ -3,6 +3,7 @@ html(class="no-js", lang="ru")
 
   include ../components/head/head
   include ../components/header/header
+  include ../components/header-menu/header-menu
   include ../components/menu/menu
   include ../components/filter/filter
   include ../components/tabs/tabs
@@ -13,11 +14,16 @@ html(class="no-js", lang="ru")
   head
     +head(head.defaults)
   body
-    block header
-      +header
+    block variables
+      -var page = 'default'
+    -if(page != 'redaktor-page2' && page != 'statistic-za')
+      +header(false)
+    -else
+      +header(true)._not-bordered
     main.main
-      block menu
-        +menu
+      -if(page != 'redaktor-page2' && page != 'statistic-za')
+        block menu
+          +menu
       block content
         h1 Hello, world!
     block footer

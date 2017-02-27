@@ -19,6 +19,9 @@
     height: 52px;
 
     border-right: 1px solid #e5e5e5;
+    &._not-bordered {
+      border-right: none;
+    }
     a {
       position: absolute;
       top: 50%;

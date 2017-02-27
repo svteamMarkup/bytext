@@ -1,0 +1,11 @@
+extends ./layout.jade
+
+block variables
+  -var page = 'redaktor-page2'
+
+block content
+  .content._full-width
+    +filter-statistic-redaktor
+    +tabs
+    +redaktor-task-list
+    +pagination

@@ -18,7 +18,8 @@
 		&._theme {
 			margin-bottom: 0;
 		}
-		&._statistic {
+		&._statistic,
+		&._statistic-redaktor {
 			margin-bottom: 0;
 
 			justify-content: flex-start;
@@ -39,6 +40,9 @@
 			font-family: "Lato-Semibold";
 			font-size: 18px;
 		}
+		&._statistic-za {
+			margin-right: 18px;
+		}		
 	}
 }
 .filter-block {
@@ -65,11 +69,20 @@
 	&._statistic-date {
 		margin-right: 103px;
 	}
+	&._statistic-za {
+		margin-right: 510px;
+	}	
 	&._statistic-user {
 		margin-right: 111px;
 	}
 	&._statistic-user-search {
 		margin-right: 45px;
+	}
+	&._statistic-redaktor-search {
+		margin-right: 130px;
+	}
+	&._statistic-redaktor-sites {
+		margin-right: 80px;
 	}
 	&__inner {
 		display: flex;
@@ -222,6 +235,9 @@
 		&._small {
 			width: 317px;
 		}
+		&._xsmall {
+			width: 360px;
+		}
 		&._middle {
 			width: 478px;
 
@@ -276,6 +292,9 @@
 		}
 		&._middle {
 			width: 260px;
+		}
+		&._xmiddle {
+			width: 350px;
 		}
 		&._big {
 			width: 330px;
