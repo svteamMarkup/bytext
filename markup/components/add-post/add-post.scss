@@ -1,0 +1,103 @@
+.add-post {
+	font-size: 14px;	
+	&__title {
+		margin-bottom: 15px;
+		.fa {
+			font-size: 25px;
+			color: #919fb3;
+		}
+		span {
+			padding-left: 20px;
+			font-size: 29px;
+			color: #414852;
+		}
+	}
+}
+.add-post-textarea-block {
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	&__title {
+		@extend .bg-title;
+		font-size: 14px;
+		padding: 13px 0 10px 20px;
+	}
+	&__attributes {
+		background-color: #f0f1f2;
+		padding: 5px 0 5px 20px;
+	}
+	&__towrite {
+		height: 630px;
+		width: 100%;
+		box-sizing: border-box;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+}
+.add-post-attachment {
+	background-color: #f0f1f2;
+	padding: 15px 0 15px 20px;
+	display: flex;
+	font-size: 14px;
+	justify-content: flex-start;
+	margin-bottom: 20px;
+	&__button {
+		@extend .button;
+		width: 147px;
+		line-height: 28px;
+		color: #414852;
+		overflow: hidden;
+		position: relative;
+		margin-right: 20px;
+		text-align: center;
+	}
+	&__file {
+		@extend .button;
+		width: 220px;
+		line-height: 29px;
+		margin-right: 20px;
+		padding-left: 33px;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			height: 20px;
+			width: 20px;
+			top: 50%;
+			left: 6px;
+			transform: translateY(-50%);
+		}
+		&._microsoft-word {
+			&:before {
+				@include bg($microsoft-word);	
+			}
+		}
+		&._image {
+			&:before {
+				@include bg($image);	
+			}
+		}		
+		&._last {
+			margin-right: 0;
+		}
+		.fa {
+			padding-left: 39px;
+			color: #999;
+		}
+	}
+}
+.add-post-save {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__button {
+		@extend .button;
+		line-height: 40px;
+		width: 238px;
+		border-left: none;
+	}
+	&__total {
+		span {
+			font-family: 'Lato-Semibold';
+		}
+	}
+}

@@ -1,3 +1,89 @@
+::-webkit-input-placeholder {
+    color: #414852;
+}
+::-moz-placeholder {
+    color: #414852;
+}
+:-moz-placeholder {
+    color: #414852;
+}
+:-ms-input-placeholder {
+    color: #414852;
+}
+.button {
+  cursor: pointer;
+  @include transition;
+  box-sizing: border-box;
+  &._simple {
+    border: 1px solid #ccc;
+    color: #414852;
+    background: linear-gradient(to bottom,  #f3f3f3 0%, #ededed 100%);
+    &:hover {
+      background: linear-gradient(to bottom, #ededed 0%, #f3f3f3 100%);
+    }    
+  }
+  &._white {
+    text-decoration: none;
+    color: #414852;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(#000, 0.2);
+    &:hover {
+      color: inherit;
+      background-color: #f1f2f3;
+    }
+    &._active {
+      background-color: #f1f2f3;
+    }    
+  }
+  &._green {
+    text-align: center;
+    color: #fff;
+    border-left: 3px solid #75b233;
+    background-color: #82c537;
+    box-shadow: 0 1px 1px rgba(#000, 0.2);
+    &:hover {
+      background-color: darken(#82c537, 5%);
+    }
+  }
+  &._blue {
+    text-align: center;
+    color: #fff;
+    border-left: 3px solid #4ea4dd;
+    background-color: #56b5f5;
+    box-shadow: 0 1px 1px rgba(#000, 0.2);    
+    &:hover {
+        background-color: darken(#56b5f5, 5%);
+    }
+  }
+  &._light-blue {
+    background-color: #5fb9f6;
+    color: #fff;
+    &:hover {
+        background-color: darken(#5fb9f6, 5%);
+    }      
+  }  
+  &._small {
+    width: 126px;
+  }
+  &._middle {
+    width: 128px;
+
+    line-height: 38px;
+  }
+  &._big {
+    width: 153px;
+  }
+  &._xbig {
+    width: 193px;
+
+    line-height: 38px;
+  } 
+  &._large {
+    padding-right: 25px;
+    padding-left: 25px;
+  }  
+}
 a {
   text-decoration: none;
 
@@ -7,6 +93,10 @@ a {
   &:hover {
     color: #2d7baf + #111;
   }
+}
+.bg-title {
+    background-color: #919fb3;
+    color: #fff;
 }
 .wrapper {
   width: 1285px;
@@ -26,8 +116,16 @@ a {
   &._full-width {
     width: 100%;
   }
+  &._other-page {
+    width: 960px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
+    padding: 28px 20px 25px;
+  }
 }
-
+.right-sidebar {
+  width: 305px;
+}
 .table {
   font-size: 14px;
   &._striped {
@@ -89,6 +187,9 @@ a {
           .fa {
             color: #a7b2c4;
           }
+        }
+        &._total {
+          padding-left: 82px;
         }
         &._center {
           text-align: center;

@@ -1,0 +1,33 @@
+mixin profile(data)
+	.profile
+		.profile__inner
+			.profile-top
+				.profile-top-user
+					i.fa.fa-user-circle-o
+					.profile-top-user__name MELESHKO2
+			form(method="POST" action="").profile-info
+				.profile-info__column
+					.profile-info__common-info
+						.profile-info-input-block
+							.profile-info-input-block__left
+								label.profile-info-input-block__label Кошелек
+							input(type="text" value="" placeholder="R123456789").profile-info-input-block__input
+						.profile-info-input-block
+							.profile-info-input-block__left
+								label.profile-info-input-block__label ICQ
+							input(type="text" value="" placeholder="").profile-info-input-block__input
+						.profile-info-input-block
+							.profile-info-input-block__left
+								label.profile-info-input-block__label Skype
+							input(type="text" value="" placeholder="skypename").profile-info-input-block__input
+						.profile-info-input-block
+							.profile-info-input-block__left
+								label.profile-info-input-block__label Email
+							input(type="text" value="" placeholder="namemail@mail.ru").profile-info-input-block__input
+					label.profile-info-input-block__label._reg-copyrighters Ссылка на для регистрации копирайтеров
+					.profile-info-input-block
+						input(type="text" value="" placeholder="truetext.ru/ref13246").profile-info-input-block__input._big
+						a(href="#" title="").profile-info-input-block__button._simple
+							i.fa.fa-clone
+				.profile-info__column
+					+change-password

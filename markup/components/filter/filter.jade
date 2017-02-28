@@ -7,27 +7,27 @@ mixin filter-date(data)
 					a(href="#" title="").filter-block__calendar: i.fa.fa-calendar
 					input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
 					input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
-					input(type="submit" value="Ок").filter-block__simple-button._ok
+					input(type="submit" value="Ок").filter-block__simple-button._ok._simple
 				.filter-block._control-tasks
-					.filter-block__label._small._not-click Запросы 
+					.filter-block__label._white._small._not-click Запросы 
 						strong 34
-					a(href="#" title="").filter-block__label._big Назначить задания
+					a(href="#" title="").filter-block__label._white._big Назначить задания
 					a(href="#" title="").filter-block__label._big._green Добавить задание
 			.filter__row
 				.filter-block
-					a(href="#" title="").filter-block__label._large._active На модерации <strong>34</strong>
-					a(href="#" title="").filter-block__label._large Новое <strong>34</strong>
-					a(href="#" title="").filter-block__label._large Выполняется <strong>34</strong>
-					a(href="#" title="").filter-block__label._large На проверке <strong>34</strong>
-					a(href="#" title="").filter-block__label._large На доработке <strong>34</strong>
-					a(href="#" title="").filter-block__label._large Выполнено <strong>34</strong>
-					a(href="#" title="").filter-block__label._large Опубликовано <strong>34</strong>
+					a(href="#" title="").filter-block__label._white._large._active На модерации <strong>34</strong>
+					a(href="#" title="").filter-block__label._white._large Новое <strong>34</strong>
+					a(href="#" title="").filter-block__label._white._large Выполняется <strong>34</strong>
+					a(href="#" title="").filter-block__label._white._large На проверке <strong>34</strong>
+					a(href="#" title="").filter-block__label._white._large На доработке <strong>34</strong>
+					a(href="#" title="").filter-block__label._white._large Выполнено <strong>34</strong>
+					a(href="#" title="").filter-block__label._white._large Опубликовано <strong>34</strong>
 			.filter__row._last
 				.filter-block
 					label.filter__label Поиск
 						input(type="text" value="").filter-block__search-input
 						.filter-block__search-wrapper
-							input(type="submit" value="").filter-block__simple-button._search
+							input(type="submit" value="").filter-block__simple-button._search._simple._simple
 							i.fa.fa-search
 				.filter-block
 					label.filter__label Проект
@@ -50,7 +50,7 @@ mixin filter-theme(data)
 						option по имени
 						option хз							
 					.filter-block__search-wrapper
-						input(type="submit" value="").filter-block__simple-button._search
+						input(type="submit" value="").filter-block__simple-button._search._simple
 						i.fa.fa-search
 				a(href="#" title="").filter-block__label._big._green Добавить
 
@@ -137,7 +137,7 @@ mixin filter-request(data)
 					label.filter__label Поиск
 					input(type="text" value="").filter-block__search-input._big._nomargin
 					.filter-block__search-wrapper._silver
-						input(type="submit" value="").filter-block__simple-button._search
+						input(type="submit" value="").filter-block__simple-button._search._simple
 						i.fa.fa-search
 				.filter-block._unflex
 					label.filter__label Статус
@@ -154,7 +154,7 @@ mixin filter-statistic(data)
 					label.filter__label Поиск
 					input(type="text" value="").filter-block__search-input._small._nomargin
 					.filter-block__search-wrapper._silver
-						input(type="submit" value="").filter-block__simple-button._search
+						input(type="submit" value="").filter-block__simple-button._search._simple
 						i.fa.fa-search
 				.filter-block._unflex._statistic-sites
 					label.filter__label Сайты
@@ -166,9 +166,9 @@ mixin filter-statistic(data)
 							i.fa.fa-calendar
 						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
 						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
-						input(type="submit" value="Ок").filter-block__simple-button._ok
+						input(type="submit" value="Ок").filter-block__simple-button._ok._simple
 				.filter-block
-					a(href="#" title="").filter-block__label._big._statistic
+					a(href="#" title="").filter-block__label._white._big._statistic
 						i.fa.fa-star
 						span Рейтинг
 
@@ -180,7 +180,7 @@ mixin filter-statistic-redaktor(data)
 					label.filter__label Поиск
 					input(type="text" value="").filter-block__search-input._xsmall._nomargin
 					.filter-block__search-wrapper._silver
-						input(type="submit" value="").filter-block__simple-button._search
+						input(type="submit" value="").filter-block__simple-button._search._simple
 						i.fa.fa-search
 				.filter-block._unflex._statistic-redaktor-sites
 					label.filter__label Сайты
@@ -192,7 +192,7 @@ mixin filter-statistic-redaktor(data)
 							i.fa.fa-calendar
 						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
 						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
-						input(type="submit" value="Ок").filter-block__simple-button._ok
+						input(type="submit" value="Ок").filter-block__simple-button._ok._simple
 					
 
 mixin filter-statistic-user(data)
@@ -211,7 +211,7 @@ mixin filter-statistic-user(data)
 						option по имени
 						option хз
 					.filter-block__search-wrapper
-						input(type="submit" value="").filter-block__simple-button._search
+						input(type="submit" value="").filter-block__simple-button._search._simple
 						i.fa.fa-search
 				.filter-block._unflex
 					label.filter__label Выбрать даты
@@ -220,7 +220,7 @@ mixin filter-statistic-user(data)
 							i.fa.fa-calendar
 						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
 						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
-						input(type="submit" value="Ок").filter-block__simple-button._ok											
+						input(type="submit" value="Ок").filter-block__simple-button._ok._simple											
 
 mixin filter-statistic-date(data)
 	form(method="GET" action="").filter
@@ -235,5 +235,5 @@ mixin filter-statistic-date(data)
 							i.fa.fa-calendar
 						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
 						input(type="text" value="" placeholder="10.11.2016").filter-block__select-date-input
-						input(type="submit" value="Ок").filter-block__simple-button._ok		
+						input(type="submit" value="Ок").filter-block__simple-button._ok._simple
 						

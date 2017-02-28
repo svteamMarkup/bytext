@@ -1,0 +1,69 @@
+.profile {
+	padding: 36px 110px 59px;
+	background-color: #fff;
+	font-size: 14px;
+	color: #414852;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
+}
+.profile-top {
+	padding-bottom: 27px;
+	border-bottom: 1px dotted #b2b2b2;
+}
+.profile-top-user {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	&__name {
+		font-size: 22px;
+		color: #414852;
+		font-family: "Lato-Semibold";
+		margin-left: 38px;
+	}
+	.fa {
+		font-size: 43px;
+		color: #bfc4cb;
+	}
+}
+.profile-info {
+	padding-top: 37px;
+	display: flex;
+	justify-content: space-between;
+	&__column {
+		width: 416px;
+	}
+	&__common-info {
+		margin-bottom: 52px;
+	}
+}
+.profile-info-input-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&__left {
+		width: 110px;
+	}
+	&__label {
+		display: block;
+		&._reg-copyrighters {
+			margin-bottom: 5px;
+		}
+	}
+	&__input {
+		@extend .input-form;
+		width: 216px;
+		height: 26px;
+		padding-left: 15px;
+		&._big {
+			width: 383px;
+		}
+	}
+	&__button {
+		@extend .button;
+		width: 26px;
+	    line-height: 24px;
+	}
+}

@@ -129,83 +129,19 @@
 		@extend .input-form;
 	}
 	&__simple-button {
-		width: 30px;
-
-		cursor: pointer;
+		@extend .button;
 		text-align: center;
-
-		color: #414852;
-		border: 1px solid #ccc;
-		background: linear-gradient(to bottom,  #f3f3f3 0%, #ededed 100%);
-
+		width: 30px;
 		font-size: 12px;
 		line-height: 26px;
-
-		@include transition;
-		&:hover {
-			background: linear-gradient(to bottom, #ededed 0%, #f3f3f3 100%);
-		}
 	}
 	&__label {
-		text-align: center;
-		text-decoration: none;
-
-		color: #414852;
-		border: 1px solid #ccc;
-		background-color: #fff;
-		box-shadow: 0 1px 1px rgba(#000,.2);
-
+		@extend .button;
 		font-size: 14px;
 		line-height: 28px;
-
-		@include transition;
-		&:hover:not(._not-click) {
-			color: inherit;
-			background-color: #f1f2f3;
-		}
+		text-align: center;
 		&._not-click {
 			cursor: default;
-		}
-		&._active {
-			background-color: #f1f2f3;
-		}
-		&._green {
-			color: #fff;
-			border-left: 3px solid #75b233;
-			background-color: #82c537;
-			&:hover {
-				color: #fff;
-				background-color: darken(#82c537, 5%);
-			}
-		}
-		&._blue {
-			color: #fff;
-			border-left: 3px solid #4ea4dd;
-			background-color: #56b5f5;
-			&:hover {
-				color: #fff;
-				background-color: darken(#56b5f5, 5%);
-			}
-		}
-		&._small {
-			width: 126px;
-		}
-		&._middle {
-			width: 128px;
-
-			line-height: 38px;
-		}
-		&._big {
-			width: 153px;
-		}
-		&._xbig {
-			width: 193px;
-
-			line-height: 38px;
-		}
-		&._large {
-			padding-right: 25px;
-			padding-left: 25px;
 		}
 		&._statistic {
 			position: relative;

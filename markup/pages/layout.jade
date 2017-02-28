@@ -9,6 +9,11 @@ html(class="no-js", lang="ru")
   include ../components/tabs/tabs
   include ../components/task-list/task-list
   include ../components/pagination/pagination
+  include ../components/profile/profile
+  include ../components/change-password/change-password
+  include ../components/news/news
+  include ../components/news-item/news-item
+  include ../components/add-post/add-post
   include ../components/footer/footer
 
   head
@@ -16,12 +21,12 @@ html(class="no-js", lang="ru")
   body
     block variables
       -var page = 'default'
-    -if(page != 'redaktor-page2' && page != 'statistic-za')
+    -if(page != 'tasks' && page != 'statistic-za' && page != 'profile' && page != 'news' && page != 'check')
       +header(false)
     -else
       +header(true)._not-bordered
     main.main
-      -if(page != 'redaktor-page2' && page != 'statistic-za')
+      -if(page != 'tasks' && page != 'statistic-za' && page != 'profile' && page != 'news' && page != 'check')
         block menu
           +menu
       block content
