@@ -11,6 +11,7 @@ textarea {
 	border: none;
 	outline: none;
     resize: none;
+    box-sizing: border-box;
 }
 input[type="file"] {
     cursor: inherit;

@@ -1,5 +1,6 @@
 .add-post {
 	font-size: 14px;	
+	margin-bottom: 25px;
 	&__title {
 		margin-bottom: 15px;
 		.fa {
@@ -28,7 +29,6 @@
 	&__towrite {
 		height: 630px;
 		width: 100%;
-		box-sizing: border-box;
 		padding-top: 20px;
 		padding-left: 20px;
 	}
@@ -99,5 +99,41 @@
 		span {
 			font-family: 'Lato-Semibold';
 		}
+	}
+}
+
+.textarea-item {
+	font-size: 14px;
+	margin-bottom: 20px;
+
+	&__title {
+		@extend .bg-title;
+		padding: 13px 0 10px 20px;
+		&._angle {
+			position: relative;
+			cursor: pointer;
+			&:after {
+				position: absolute;
+				content: "\f104";
+				font-family: 'FontAwesome';
+				font-size: 22px;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 10px;
+			}
+			&._active {
+				&:after {
+					content: "\f107";
+				}
+			}			
+		}
+	}
+	&__towrite {
+		height: 320px;
+		width: 100%;
+		border: 1px solid #ccc;
+		&._small {
+			height: 166px;
+		}		
 	}
 }

@@ -23,3 +23,11 @@ mixin add-post(data)
 			input(type="submit" value="Сохранить и пересчитать ТОП").add-post-save__button._light-blue
 			.add-post-save__total Кол-во символов: <span>10700</span>
 					
+mixin textarea-item(angle)
+	-var modifier = attributes.class || ''
+	.textarea-item
+		-if(angle == false)
+			.textarea-item__title Заметки
+		-else
+			.textarea-item__title._angle Заметки
+		textarea.textarea-item__towrite(class="#{modifier}")

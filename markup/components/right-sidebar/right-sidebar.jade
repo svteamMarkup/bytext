@@ -1,0 +1,16 @@
+mixin right-sidebar(data)
+	.right-sidebar
+		+preview-user
+		+task
+		.right-sidebar-checkout
+			form(method="POST" action="").right-sidebar-checkout__form
+				+rating
+				label.right-sidebar-checkout__payment
+					span.right-sidebar-checkout__label Оплата сразу
+					input(type="checkbox" checked).right-sidebar-checkout__field
+				input(type="submit" value="Принять").right-sidebar-checkout__submit._green
+				input(type="submit" value="Отправить на доработку").right-sidebar-checkout__submit._red
+			a(href="#" title="").right-sidebar-checkout__button._simple Отложить проверку
+			a(href="#" title="").right-sidebar-checkout__button._simple Штраф копирайтеру
+
+					

@@ -1,0 +1,50 @@
+.task {
+	font-size: 14px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
+	background-color: #f0f1f2;
+	margin-bottom: 20px;
+	&__title {
+		@extend .bg-title;
+		padding: 13px 0 13px 20px;
+	}
+	&__content {
+		margin: auto;
+		width: 268px;
+	}	
+}
+
+.task-row {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #aaabac;
+	&._last {
+		border-bottom: none;
+	}
+	&__title {
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-bottom: 8px;
+	}
+	&__content {
+		position: relative;
+		padding-left: 13px;
+	}
+	&__text {
+		font-family: 'Lato-SemiBold';
+	}
+	&__view-all {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		span {
+			padding-right: 3px;
+		}
+	}
+}
+
+.task-row-list {
+	&__item {
+		font-family: 'Lato-Semibold';
+		color: #333;
+	}
+}

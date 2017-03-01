@@ -37,7 +37,6 @@
     }    
   }
   &._green {
-    text-align: center;
     color: #fff;
     border-left: 3px solid #75b233;
     background-color: #82c537;
@@ -47,7 +46,6 @@
     }
   }
   &._blue {
-    text-align: center;
     color: #fff;
     border-left: 3px solid #4ea4dd;
     background-color: #56b5f5;
@@ -62,6 +60,16 @@
     &:hover {
         background-color: darken(#5fb9f6, 5%);
     }      
+  }
+  
+  &._red {
+    color: #fff;
+    border-left: 3px solid #e06755;
+    background-color: #f7725e;
+    box-shadow: 0 1px 1px rgba(#000, 0.2);    
+    &:hover {
+        background-color: darken(#f7725e, 5%);
+    }
   }  
   &._small {
     width: 126px;
@@ -97,6 +105,13 @@ a {
 .bg-title {
     background-color: #919fb3;
     color: #fff;
+    line-height: 1;
+    &._blue {
+      background-color: #56b5f5;
+    }
+}
+.bold {
+  font-family: 'Lato-Bold';
 }
 .wrapper {
   width: 1285px;
@@ -121,6 +136,7 @@ a {
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.28);
     padding: 28px 20px 25px;
+    box-sizing: border-box;
   }
 }
 .right-sidebar {
@@ -414,8 +430,10 @@ a {
   }
 }
 .input-form {
-  box-sizing: border-box;
-
   border: 1px solid #ccc;
   box-shadow: 0 2px 1px rgba(#000,.07) inset;
+}
+.checkbox-block {
+  color: #414852;
+  font-family: 'Lato-Semibold';
 }
