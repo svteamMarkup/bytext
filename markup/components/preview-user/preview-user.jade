@@ -5,8 +5,8 @@ mixin preview-user(data)
 			.preview-user-top
 				.preview-user-top__column._left
 					i.fa.fa-user-circle-o
-					span.preview-user-top__name meleshko2
-				.preview-user-top__label Новичок
+					a(href="#" title="").preview-user-top__name meleshko2
+				.preview-user-top__bg-title Новичок
 			.preview-user-meta
 				.preview-user-meta__column
 					.preview-user-meta__title Время исполнения:
@@ -17,5 +17,5 @@ mixin preview-user(data)
 				.preview-user-meta__column
 					.preview-user-meta__title Доработки:
 					.preview-user-meta__total
-						i.fa.fa-pencil
+						a(href="#" title=""): i.fa.fa-pencil
 						span 1

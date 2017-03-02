@@ -39,9 +39,11 @@
 
 	justify-content: flex-start;
 	&__button {
-		@extend .button;
-		line-height: 26px;
 		text-align: center;
+
+		line-height: 26px;
+
+		@extend .button;
 	}
 	&__delete {
 		position: relative;
@@ -54,8 +56,10 @@
 		}
 	}
 	&__simple-button {
-		@extend .button;
 		width: 30px;
+
 		line-height: 26px;
+
+		@extend .button;
 	}
 }

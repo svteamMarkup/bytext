@@ -1,13 +1,18 @@
 .rating {
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+
 	margin-bottom: 23px;
+
+	align-items: center;
+	justify-content: flex-start;
 	&__title {
-		color: #414852;
-		font-size: 14px;
-		text-transform: uppercase;
-		font-family: 'Lato-Semibold';
 		margin-right: 40px;
+
+		text-transform: uppercase;
+
+		color: #414852;
+
+		font-family: "Lato-Semibold";
+		font-size: 14px;
 	}
 }

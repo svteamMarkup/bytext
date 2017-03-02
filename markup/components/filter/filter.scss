@@ -42,7 +42,7 @@
 		}
 		&._statistic-za {
 			margin-right: 18px;
-		}		
+		}
 	}
 }
 .filter-block {
@@ -71,7 +71,7 @@
 	}
 	&._statistic-za {
 		margin-right: 510px;
-	}	
+	}
 	&._statistic-user {
 		margin-right: 111px;
 	}
@@ -129,17 +129,22 @@
 		@extend .input-form;
 	}
 	&__simple-button {
-		@extend .button;
-		text-align: center;
 		width: 30px;
+
+		text-align: center;
+
 		font-size: 12px;
 		line-height: 26px;
+
+		@extend .button;
 	}
 	&__label {
-		@extend .button;
+		text-align: center;
+
 		font-size: 14px;
 		line-height: 28px;
-		text-align: center;
+
+		@extend .button;
 		&._not-click {
 			cursor: default;
 		}

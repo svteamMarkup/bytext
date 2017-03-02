@@ -1683,7 +1683,7 @@ mixin statistic-data-posters-list(data)
           td._center Старые советы
           td._center Мария Иванова                                                            
 
-mixin redaktor-task-list(data)
+mixin tasks(data)
   .task-list
     table.table._striped
       thead
@@ -1700,7 +1700,8 @@ mixin redaktor-task-list(data)
       tfoot  
         tr
           td Итого: 4
-          td Статистика за 21.02.2017 12:04   /  Проверено: 4    /  Кол-во символов: 445400
+          td(colspan="8" align="right")._statistic
+            | Статистика за 21.02.2017 12:04   /  Проверено: <a href="#" title="">4</a>    /  Кол-во символов: <strong>445400</strong>
       tbody
         tr
           td._padding 

@@ -1,139 +1,174 @@
 .add-post {
-	font-size: 14px;	
 	margin-bottom: 25px;
+
+	font-size: 14px;
 	&__title {
 		margin-bottom: 15px;
 		.fa {
-			font-size: 25px;
 			color: #919fb3;
+
+			font-size: 25px;
 		}
 		span {
 			padding-left: 20px;
-			font-size: 29px;
+
 			color: #414852;
+
+			font-size: 29px;
 		}
 	}
 }
 .add-post-textarea-block {
-	border: 1px solid #ccc;
 	margin-bottom: 20px;
+
+	border: 1px solid #ccc;
 	&__title {
-		@extend .bg-title;
-		font-size: 14px;
 		padding: 13px 0 10px 20px;
+
+		font-size: 14px;
+
+		@extend .bg-title;
 	}
 	&__attributes {
-		background-color: #f0f1f2;
 		padding: 5px 0 5px 20px;
+
+		background-color: #f0f1f2;
 	}
 	&__towrite {
-		height: 630px;
 		width: 100%;
+		height: 630px;
 		padding-top: 20px;
 		padding-left: 20px;
 	}
 }
 .add-post-attachment {
-	background-color: #f0f1f2;
-	padding: 15px 0 15px 20px;
 	display: flex;
-	font-size: 14px;
-	justify-content: flex-start;
+
 	margin-bottom: 20px;
+	padding: 15px 0 15px 20px;
+
+	background-color: #f0f1f2;
+
+	font-size: 14px;
+
+	justify-content: flex-start;
 	&__button {
-		@extend .button;
-		width: 147px;
-		line-height: 28px;
-		color: #414852;
-		overflow: hidden;
 		position: relative;
+
+		overflow: hidden;
+
+		width: 147px;
 		margin-right: 20px;
+
 		text-align: center;
+
+		color: #414852;
+
+		line-height: 28px;
+
+		@extend .button;
 	}
 	&__file {
-		@extend .button;
+		position: relative;
+
 		width: 220px;
-		line-height: 29px;
 		margin-right: 20px;
 		padding-left: 33px;
-		position: relative;
+
+		line-height: 29px;
+
+		@extend .button;
 		&:before {
-			content: '';
 			position: absolute;
-			height: 20px;
-			width: 20px;
 			top: 50%;
 			left: 6px;
+
+			width: 20px;
+			height: 20px;
+
+			content: "";
 			transform: translateY(-50%);
 		}
 		&._microsoft-word {
 			&:before {
-				@include bg($microsoft-word);	
+				@include bg($microsoft-word);
 			}
 		}
 		&._image {
 			&:before {
-				@include bg($image);	
+				@include bg($image);
 			}
-		}		
+		}
 		&._last {
 			margin-right: 0;
 		}
 		.fa {
 			padding-left: 39px;
+
 			color: #999;
 		}
 	}
 }
 .add-post-save {
 	display: flex;
-	justify-content: space-between;
+
 	align-items: center;
+	justify-content: space-between;
 	&__button {
-		@extend .button;
-		line-height: 40px;
 		width: 238px;
+
 		border-left: none;
+
+		line-height: 40px;
+
+		@extend .button;
 	}
 	&__total {
 		span {
-			font-family: 'Lato-Semibold';
+			font-family: "Lato-Semibold";
 		}
 	}
 }
 
 .textarea-item {
-	font-size: 14px;
 	margin-bottom: 20px;
 
+	font-size: 14px;
 	&__title {
-		@extend .bg-title;
 		padding: 13px 0 10px 20px;
+
+		@extend .bg-title;
 		&._angle {
 			position: relative;
+
 			cursor: pointer;
 			&:after {
 				position: absolute;
-				content: "\f104";
-				font-family: 'FontAwesome';
-				font-size: 22px;
 				top: 50%;
-				transform: translateY(-50%);
 				right: 10px;
+
+				content: "\f104";
+				transform: translateY(-50%);
+
+				font-family: "FontAwesome";
+				font-size: 22px;
 			}
 			&._active {
 				&:after {
 					content: "\f107";
 				}
-			}			
+			}
 		}
 	}
 	&__towrite {
-		height: 320px;
 		width: 100%;
+		height: 320px;
+		padding-top: 20px;
+		padding-left: 20px;
+
 		border: 1px solid #ccc;
 		&._small {
 			height: 166px;
-		}		
+		}
 	}
 }

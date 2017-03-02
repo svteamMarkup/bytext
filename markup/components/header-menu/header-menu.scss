@@ -1,21 +1,21 @@
 .header-menu {
-  
+  display: flex;
 
   background-color: #fff;
-  display: flex;
-  
   &__item {
     position: relative;
 
     display: block;
-	  padding: 23px 38px 15px 30px;
+
+    padding: 23px 38px 15px 30px;
+
     text-decoration: none;
 
     color: #2b3440;
-    
     border-right: 1px solid #e5e5e5;
-	  border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent;
     border-left: 1px solid transparent;
+
     font-size: 14px;
     &:hover,
     &._active {
