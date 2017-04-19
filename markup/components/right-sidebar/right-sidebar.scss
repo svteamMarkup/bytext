@@ -1,0 +1,51 @@
+
+.right-sidebar-checkout {
+	&__form {
+		margin-right: auto;
+		margin-bottom: 10px;
+		margin-left: auto;
+		padding: 20px;
+
+		background-color: #fff;
+		box-shadow: 0 0 5px rgba(0, 0, 0, .28);
+	}
+	&__payment {
+		display: block;
+
+		margin-bottom: 15px;
+
+		@extend .checkbox-block;
+	}
+	&__label {
+		margin-right: 15px;
+
+		font-size: 14px;
+	}
+	&__field {
+		vertical-align: middle;
+	}
+	&__submit {
+		width: 100%;
+		margin-bottom: 10px;
+
+		line-height: 43px;
+
+		@extend .button;
+	}
+	&__button {
+		display: inline-block;
+
+		width: 143px;
+		margin-right: 17px;
+
+		text-align: center;
+
+		font-size: 14px;
+		line-height: 28px;
+
+		@extend .button;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

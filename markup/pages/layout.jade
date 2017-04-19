@@ -3,21 +3,36 @@ html(class="no-js", lang="ru")
 
   include ../components/head/head
   include ../components/header/header
+  include ../components/header-menu/header-menu
   include ../components/menu/menu
   include ../components/filter/filter
   include ../components/tabs/tabs
   include ../components/task-list/task-list
   include ../components/pagination/pagination
+  include ../components/profile/profile
+  include ../components/change-password/change-password
+  include ../components/news/news
+  include ../components/news-item/news-item
+  include ../components/add-post/add-post
+  include ../components/right-sidebar/right-sidebar
+  include ../components/preview-user/preview-user
+  include ../components/task/task
+  include ../components/rating/rating
   include ../components/footer/footer
 
   head
     +head(head.defaults)
   body
-    block header
-      +header
+    block variables
+      -var page = 'default'
+    -if(page != 'tasks' && page != 'statistic-za' && page != 'profile' && page != 'news' && page != 'check')
+      +header(false)
+    -else
+      +header(true)._not-bordered
     main.main
-      block menu
-        +menu
+      -if(page != 'tasks' && page != 'statistic-za' && page != 'profile' && page != 'news' && page != 'check')
+        block menu
+          +menu
       block content
         h1 Hello, world!
     block footer

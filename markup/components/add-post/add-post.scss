@@ -1,0 +1,174 @@
+.add-post {
+	margin-bottom: 25px;
+
+	font-size: 14px;
+	&__title {
+		margin-bottom: 15px;
+		.fa {
+			color: #919fb3;
+
+			font-size: 25px;
+		}
+		span {
+			padding-left: 20px;
+
+			color: #414852;
+
+			font-size: 29px;
+		}
+	}
+}
+.add-post-textarea-block {
+	margin-bottom: 20px;
+
+	border: 1px solid #ccc;
+	&__title {
+		padding: 13px 0 10px 20px;
+
+		font-size: 14px;
+
+		@extend .bg-title;
+	}
+	&__attributes {
+		padding: 5px 0 5px 20px;
+
+		background-color: #f0f1f2;
+	}
+	&__towrite {
+		width: 100%;
+		height: 630px;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+}
+.add-post-attachment {
+	display: flex;
+
+	margin-bottom: 20px;
+	padding: 15px 0 15px 20px;
+
+	background-color: #f0f1f2;
+
+	font-size: 14px;
+
+	justify-content: flex-start;
+	&__button {
+		position: relative;
+
+		overflow: hidden;
+
+		width: 147px;
+		margin-right: 20px;
+
+		text-align: center;
+
+		color: #414852;
+
+		line-height: 28px;
+
+		@extend .button;
+	}
+	&__file {
+		position: relative;
+
+		width: 220px;
+		margin-right: 20px;
+		padding-left: 33px;
+
+		line-height: 29px;
+
+		@extend .button;
+		&:before {
+			position: absolute;
+			top: 50%;
+			left: 6px;
+
+			width: 20px;
+			height: 20px;
+
+			content: "";
+			transform: translateY(-50%);
+		}
+		&._microsoft-word {
+			&:before {
+				@include bg($microsoft-word);
+			}
+		}
+		&._image {
+			&:before {
+				@include bg($image);
+			}
+		}
+		&._last {
+			margin-right: 0;
+		}
+		.fa {
+			padding-left: 39px;
+
+			color: #999;
+		}
+	}
+}
+.add-post-save {
+	display: flex;
+
+	align-items: center;
+	justify-content: space-between;
+	&__button {
+		width: 238px;
+
+		border-left: none;
+
+		line-height: 40px;
+
+		@extend .button;
+	}
+	&__total {
+		span {
+			font-family: "Lato-Semibold";
+		}
+	}
+}
+
+.textarea-item {
+	margin-bottom: 20px;
+
+	font-size: 14px;
+	&__title {
+		padding: 13px 0 10px 20px;
+
+		@extend .bg-title;
+		&._angle {
+			position: relative;
+
+			cursor: pointer;
+			&:after {
+				position: absolute;
+				top: 50%;
+				right: 10px;
+
+				content: "\f104";
+				transform: translateY(-50%);
+
+				font-family: "FontAwesome";
+				font-size: 22px;
+			}
+			&._active {
+				&:after {
+					content: "\f107";
+				}
+			}
+		}
+	}
+	&__towrite {
+		width: 100%;
+		height: 320px;
+		padding-top: 20px;
+		padding-left: 20px;
+
+		border: 1px solid #ccc;
+		&._small {
+			height: 166px;
+		}
+	}
+}

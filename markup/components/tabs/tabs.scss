@@ -40,18 +40,10 @@
 	justify-content: flex-start;
 	&__button {
 		text-align: center;
-		text-decoration: none;
-
-		border: 1px solid #ccc;
-		background-color: #fff;
-		box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 
 		line-height: 26px;
 
-		@include transition;
-		&:hover {
-			background-color: darken(#f1f2f3, 5%);
-		}
+		@extend .button;
 	}
 	&__delete {
 		position: relative;
@@ -66,18 +58,8 @@
 	&__simple-button {
 		width: 30px;
 
-		cursor: pointer;
-		text-align: center;
-
-		border: 1px solid #ccc;
-		background: linear-gradient(to bottom, #f3f3f3 0%, #ededed 100%);
-		background-color: #fff;
-
 		line-height: 26px;
 
-		@include transition;
-		&:hover {
-			background: linear-gradient(to bottom, #ededed 0%, #f3f3f3 100%);
-		}
+		@extend .button;
 	}
 }

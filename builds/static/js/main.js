@@ -10252,6 +10252,12 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+/*$(document).on('click','.textarea-item__title',function() {
+	$(this).children('.textarea-item__towrite').slideToggle(300);
+	return false;
+});*/
+
+
 
 
 
@@ -10268,6 +10274,13 @@ $('.mask, .modal__close').click(function () {
   $(this).removeClass('_active');
   $('.modal').removeClass('_active');
 });
+
+
+
+
+
+
+
 
 
 

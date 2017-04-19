@@ -18,7 +18,8 @@
 		&._theme {
 			margin-bottom: 0;
 		}
-		&._statistic {
+		&._statistic,
+		&._statistic-redaktor {
 			margin-bottom: 0;
 
 			justify-content: flex-start;
@@ -38,6 +39,9 @@
 
 			font-family: "Lato-Semibold";
 			font-size: 18px;
+		}
+		&._statistic-za {
+			margin-right: 18px;
 		}
 	}
 }
@@ -65,11 +69,20 @@
 	&._statistic-date {
 		margin-right: 103px;
 	}
+	&._statistic-za {
+		margin-right: 510px;
+	}
 	&._statistic-user {
 		margin-right: 111px;
 	}
 	&._statistic-user-search {
 		margin-right: 45px;
+	}
+	&._statistic-redaktor-search {
+		margin-right: 130px;
+	}
+	&._statistic-redaktor-sites {
+		margin-right: 80px;
 	}
 	&__inner {
 		display: flex;
@@ -118,81 +131,22 @@
 	&__simple-button {
 		width: 30px;
 
-		cursor: pointer;
 		text-align: center;
-
-		color: #414852;
-		border: 1px solid #ccc;
-		background: linear-gradient(to bottom,  #f3f3f3 0%, #ededed 100%);
 
 		font-size: 12px;
 		line-height: 26px;
 
-		@include transition;
-		&:hover {
-			background: linear-gradient(to bottom, #ededed 0%, #f3f3f3 100%);
-		}
+		@extend .button;
 	}
 	&__label {
 		text-align: center;
-		text-decoration: none;
-
-		color: #414852;
-		border: 1px solid #ccc;
-		background-color: #fff;
-		box-shadow: 0 1px 1px rgba(#000,.2);
 
 		font-size: 14px;
 		line-height: 28px;
 
-		@include transition;
-		&:hover:not(._not-click) {
-			color: inherit;
-			background-color: #f1f2f3;
-		}
+		@extend .button;
 		&._not-click {
 			cursor: default;
-		}
-		&._active {
-			background-color: #f1f2f3;
-		}
-		&._green {
-			color: #fff;
-			border-left: 3px solid #75b233;
-			background-color: #82c537;
-			&:hover {
-				color: #fff;
-				background-color: darken(#82c537, 5%);
-			}
-		}
-		&._blue {
-			color: #fff;
-			border-left: 3px solid #4ea4dd;
-			background-color: #56b5f5;
-			&:hover {
-				color: #fff;
-				background-color: darken(#56b5f5, 5%);
-			}
-		}
-		&._small {
-			width: 126px;
-		}
-		&._middle {
-			width: 128px;
-
-			line-height: 38px;
-		}
-		&._big {
-			width: 153px;
-		}
-		&._xbig {
-			width: 193px;
-
-			line-height: 38px;
-		}
-		&._large {
-			padding-right: 25px;
-			padding-left: 25px;
 		}
 		&._statistic {
 			position: relative;
@@ -221,6 +175,9 @@
 		}
 		&._small {
 			width: 317px;
+		}
+		&._xsmall {
+			width: 360px;
 		}
 		&._middle {
 			width: 478px;
@@ -276,6 +233,9 @@
 		}
 		&._middle {
 			width: 260px;
+		}
+		&._xmiddle {
+			width: 350px;
 		}
 		&._big {
 			width: 330px;

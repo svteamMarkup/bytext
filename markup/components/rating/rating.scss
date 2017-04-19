@@ -1,0 +1,18 @@
+.rating {
+	display: flex;
+
+	margin-bottom: 23px;
+
+	align-items: center;
+	justify-content: flex-start;
+	&__title {
+		margin-right: 40px;
+
+		text-transform: uppercase;
+
+		color: #414852;
+
+		font-family: "Lato-Semibold";
+		font-size: 14px;
+	}
+}

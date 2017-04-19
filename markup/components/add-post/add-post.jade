@@ -1,0 +1,33 @@
+mixin add-post(data)
+	.add-post
+		.add-post__title
+			i.fa.fa-file-text-o
+			span Греческий йогурт
+		.add-post-textarea-block
+			.add-post-textarea-block__title Текст на проверку
+			.add-post-textarea-block__attributes
+				img(src="%=static=%images/content/add-post-attributes.png" alt="")
+			textarea.add-post-textarea-block__towrite
+		.add-post-attachment
+			.add-post-attachment__button._simple Прикрепить файл
+				form(action="" enctype="multipart/form-data" method="POST")
+					label(for="")
+						input(type="file" name="")
+			.add-post-attachment__file._microsoft-word._white
+				| Название файла.doc
+				i.fa.fa-times
+			.add-post-attachment__file._image._white._last
+				| Название файла.jpg
+				i.fa.fa-times
+		.add-post-save
+			input(type="submit" value="Сохранить и пересчитать ТОП").add-post-save__button._light-blue
+			.add-post-save__total Кол-во символов: <span>10700</span>
+					
+mixin textarea-item(angle)
+	-var modifier = attributes.class || ''
+	.textarea-item
+		-if(angle == false)
+			.textarea-item__title Заметки
+		-else
+			.textarea-item__title._angle Заметки
+		textarea.textarea-item__towrite(class="#{modifier}")

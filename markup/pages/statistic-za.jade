@@ -1,0 +1,11 @@
+extends ./layout.jade
+
+block variables
+  -var page = 'statistic-za'
+
+block content
+  .content._full-width
+    +filter-statistic-date
+    +statistic-date
+    +pagination
+

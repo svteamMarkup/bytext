@@ -1,0 +1,49 @@
+mixin task(data)
+	.task
+		.task__title._blue Задание
+		.task__content
+			.task-row
+				.task-row__title Кол-во символов
+				.task-row__content
+					span.task-row__text 10700 - 11700
+			.task-row
+				.task-row__title Тематические слова
+				.task-row__content
+					.task-row-list
+						.task-row-list__item однажды
+						.task-row-list__item вчера
+						.task-row-list__item сегодня
+						.task-row-list__item завтра
+						.task-row-list__item вдруг
+						.task-row-list__item потом
+						.task-row-list__item четверг
+						.task-row-list__item суббота
+						.task-row-list__item вокруг
+					a(href="#" title="").task-row__view-all
+						span Показать все
+						i.fa.fa-angle-double-down
+			.task-row
+				.task-row__title Топ слова
+				.task-row__content
+					.task-row-list
+						.task-row-list__item однажды
+						.task-row-list__item вчера
+						.task-row-list__item сегодня
+						.task-row-list__item завтра
+						.task-row-list__item вдруг
+						.task-row-list__item потом
+					a(href="#" title="").task-row__view-all
+						span Показать все
+						i.fa.fa-angle-double-down					
+			.task-row
+				.task-row__title Анкоры
+				.task-row__content
+					span.task-row__text йогурт
+			.task-row
+				.task-row__title Точных вхождений
+				.task-row__content
+					span.task-row__text 12
+			.task-row._last
+				.task-row__title Разбавленных вхождений
+				.task-row__content
+					span.task-row__text 12
