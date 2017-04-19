@@ -22,7 +22,9 @@ module.exports = {
             "useHMR": false,
             "providePlugin": {}
         },
-        "jsPathsToConcatBeforeModulesJs": [],
+        "jsPathsToConcatBeforeModulesJs": [
+            'node_modules/jquery/dist/jquery.js'
+        ],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],
         "lintJsCodeAfterModules": false

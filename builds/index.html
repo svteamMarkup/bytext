@@ -31,317 +31,130 @@
     </head>
 
     <body>
-        <header class="header">
-            <div class="header__wrapper">
-                <div class="header__logo"><a href="#" title="">bytext</a>
-                </div>
-                <div class="header-block _two-col">
-                    <div class="header-block__title">задания</div>
-                    <div class="header-block__list">
-                        <div class="header-block__item">На проверке: <span>123</span>
+        <div class="top-main">
+            <div class="top-main-header"><a href="#" title="" class="top-main-header__logo">truetext</a><a href="#" title="" data-modal="#modal-enter" class="top-main-header__login">Войти</a>
+                <div id="modal-enter" class="modal modal-enter">
+                    <form class="modal-form">
+                        <div class="modal-form__field _email">
+                            <input type="email" value="" placeholder="Ваш email" class="form-field">
                         </div>
-                        <div class="header-block__item">На модерации: <span>96</span>
+                        <div class="modal-form__field _password">
+                            <input type="password" value="" placeholder="Ваш пароль" class="form-field">
                         </div>
-                        <div class="header-block__item">Не закреплено: <span>66</span>
+                        <div class="modal-form__row">
+                            <label class="modal-form__field _checkbox">
+                                <input type="checkbox" value="" class="form-checkbox"><span>Запомнить меня</span>
+                            </label><a href="#" title="" data-modal="#modal-lost" class="modal-form__lost-pass">Забыли пароль?</a>
                         </div>
-                    </div>
-                </div>
-                <div class="header-block">
-                    <div class="header-block__title">Семантика</div>
-                    <div class="header-block__list">
-                        <div class="header-block__item">Фильтрованных:<span>73</span>
-                        </div>
-                        <div class="header-block__item">Не фильтрованных:<span>66</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-block">
-                    <div class="header-block__title">Семантика</div>
-                    <div class="header-block__list">
-                        <div class="header-block__item">Зарегистрировалось:<span>13</span>
-                        </div>
-                        <div class="header-block__item">Отказов статей:<span>6</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-user">
-                    <div class="header-user__name"> <i class="fa fa-user-circle-o"></i><span>Администратор</span>
-                    </div>
+                        <input type="submit" value="Войти" class="modal-form__submit _enter">
+                    </form>
                 </div>
             </div>
-        </header>
-        <main class="main">
-            <div class="menu"><a href="#" title="" class="menu__item _active"><i class="fa fa-th-list"></i><span>Список заданий</span></a><a href="#" title="" class="menu__item"><i class="fa fa-font"></i><span>Семантика</span></a>
-                <a href="#" title="" class="menu__item"><i class="fa fa-users"></i><span>Копирайтеры</span>
-                </a><a href="#" title="" class="menu__item"><i class="fa fa-pencil"></i><span>Редакторы</span></a><a href="#" title="" class="menu__item"><i class="fa fa-bar-chart"></i><span>Статистика</span></a>
-                <a href="#" title="" class="menu__item"><i class="fa fa-comments"></i><span>Тикеты</span>
-                    <div class="label _green">506</div>
-                </a><a href="#" title="" class="menu__item"><i class="fa fa-rub"></i><span>Финансы</span></a><a href="#" title="" class="menu__item"><i class="fa fa-file"></i><span>Новости</span></a><a href="#" title="" class="menu__item"><i class="fa fa-wrench"></i><span>Инструменты</span></a>
-                <a
-                href="#" title="" class="menu__item"><i class="fa fa-archive"></i><span>Аналитика</span>
-                    </a><a href="#" title="" class="menu__item"><i class="fa fa-cog"></i><span>Настройки</span></a>
+            <div class="top-main-center">
+                <div class="top-main-center__title">Постоянная работа для<span>копирайтеров</span>
+                </div><a href="#" title="" data-modal="#modal-registration" class="top-main-center__button">зарегистрироваться</a>
             </div>
-            <div class="content">
-                <form method="GET" action="" class="filter">
-                    <div class="filter__inner">
-                        <div class="filter__row">
-                            <div class="filter-block">
-                                <label class="filter__label">Выбрать даты</label><a href="#" title="" class="filter-block__calendar"><i class="fa fa-calendar"></i></a>
-                                <input type="text" value="" placeholder="10.11.2016" class="filter-block__select-date-input">
-                                <input type="text" value="" placeholder="10.11.2016" class="filter-block__select-date-input">
-                                <input type="submit" value="Ок" class="filter-block__simple-button _ok">
-                            </div>
-                            <div class="filter-block _control-tasks">
-                                <div class="filter-block__label _small _not-click">Запросы <strong>34</strong>
-                                </div><a href="#" title="" class="filter-block__label _big">Назначить задания</a><a href="#" title="" class="filter-block__label _big _green">Добавить задание</a>
-                            </div>
-                        </div>
-                        <div class="filter__row">
-                            <div class="filter-block"><a href="#" title="" class="filter-block__label _large _active">На модерации <strong>34</strong></a><a href="#" title="" class="filter-block__label _large">Новое <strong>34</strong></a><a href="#" title="" class="filter-block__label _large">Выполняется <strong>34</strong></a>
-                                <a
-                                href="#" title="" class="filter-block__label _large">На проверке <strong>34</strong>
-                                    </a><a href="#" title="" class="filter-block__label _large">На доработке <strong>34</strong></a><a href="#" title="" class="filter-block__label _large">Выполнено <strong>34</strong></a><a href="#" title="" class="filter-block__label _large">Опубликовано <strong>34</strong></a>
-                            </div>
-                        </div>
-                        <div class="filter__row _last">
-                            <div class="filter-block">
-                                <label class="filter__label">Поиск
-                                    <input type="text" value="" class="filter-block__search-input">
-                                    <div class="filter-block__search-wrapper">
-                                        <input type="submit" value="" class="filter-block__simple-button _search"><i class="fa fa-search"></i>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="filter-block">
-                                <label class="filter__label">Проект</label>
-                                <select type="text" value="" class="filter-block__select"></select>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div class="task-list">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th width="175">Тема</th>
-                                <th width="100">Кол-во символ</th>
-                                <th width="88">Добавлен</th>
-                                <th width="62">Проект</th>
-                                <th width="76">Тематика</th>
-                                <th width="52">Тем. сл</th>
-                                <th width="52">Анкор</th>
-                                <th width="40">ID</th>
-                                <th width="35">Топ</th>
-                                <th width="255">Статус</th>
-                                <th width="100">Управление</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><a href="#" title="">Как рассчитать компенсацию за неиспользованный отпуск</a>
-                                </td>
-                                <td>8500 - 9500
-                                    <br>(9496) 664р.</td>
-                                <td>23.10.2017
-                                    <br>15:02</td>
-                                <td class="_project">Старые
-                                    <br>советы</td>
-                                <td>Кулинария</td>
-                                <td class="_center">53</td>
-                                <td class="_center">99</td>
-                                <td>1136</td>
-                                <td>
-                                    <div class="label _vip">VIP</div>
-                                </td>
-                                <td class="_status">
-                                    <div class="published _green">Опубликовано (26.10.2016 05:30)</div>Проверено 24.10.2016 09:15<strong>Постер: Елена В.</strong>(оплачено Администатор 27.10.2016 15:45)<strong>Редактор: meleshko2</strong><strong>Копирайтер: Галина Loboc</strong>
-                                </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-pencil"></i><span>Правка</span></a><a href="#" title="" class="small-button"><i class="fa fa-clock-o"></i><span>История</span></a>
-                                    <a href="#" title="" class="small-button"><i class="fa fa-external-link-square"></i><span>Экспорт</span>
-                                    </a><a href="#" title="" class="small-button"><i class="fa fa-trash-o"></i><span>Удалить</span></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="#" title="">Как рассчитать компенсацию за неиспользованный отпуск</a>
-                                </td>
-                                <td>8500 - 9500
-                                    <br>(9496) 664р.</td>
-                                <td>23.10.2017
-                                    <br>15:02</td>
-                                <td class="_project">Старые
-                                    <br>советы</td>
-                                <td>Кулинария</td>
-                                <td class="_center">53</td>
-                                <td class="_center">99</td>
-                                <td>1136</td>
-                                <td>
-                                    <div class="label _vip">VIP</div>
-                                </td>
-                                <td class="_status">
-                                    <div class="published _orange">Опубликовано (26.10.2016 05:30)</div>Проверено 24.10.2016 09:15<strong>Постер: Елена В.</strong>(оплачено Администатор 27.10.2016 15:45)<strong>Редактор: meleshko2</strong><strong>Копирайтер: Галина Loboc</strong>
-                                </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-pencil"></i><span>Правка</span></a><a href="#" title="" class="small-button"><i class="fa fa-clock-o"></i><span>История</span></a>
-                                    <a href="#" title="" class="small-button"><i class="fa fa-external-link-square"></i><span>Экспорт</span>
-                                    </a><a href="#" title="" class="small-button"><i class="fa fa-trash-o"></i><span>Удалить</span></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="#" title="">Как рассчитать компенсацию за неиспользованный отпуск</a>
-                                </td>
-                                <td>8500 - 9500
-                                    <br>(9496) 664р.</td>
-                                <td>23.10.2017
-                                    <br>15:02</td>
-                                <td class="_project">Старые
-                                    <br>советы</td>
-                                <td>Кулинария</td>
-                                <td class="_center">53</td>
-                                <td class="_center">99</td>
-                                <td>1136</td>
-                                <td>
-                                    <div class="label _vip">VIP</div>
-                                </td>
-                                <td class="_status">
-                                    <div class="published _red">Опубликовано (26.10.2016 05:30)</div>Проверено 24.10.2016 09:15<strong>Постер: Елена В.</strong>(оплачено Администатор 27.10.2016 15:45)<strong>Редактор: meleshko2</strong><strong>Копирайтер: Галина Loboc</strong>
-                                </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-pencil"></i><span>Правка</span></a><a href="#" title="" class="small-button"><i class="fa fa-clock-o"></i><span>История</span></a>
-                                    <a href="#" title="" class="small-button"><i class="fa fa-external-link-square"></i><span>Экспорт</span>
-                                    </a><a href="#" title="" class="small-button"><i class="fa fa-trash-o"></i><span>Удалить</span></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="#" title="">Как рассчитать компенсацию за неиспользованный отпуск</a>
-                                </td>
-                                <td>8500 - 9500
-                                    <br>(9496) 664р.</td>
-                                <td>23.10.2017
-                                    <br>15:02</td>
-                                <td class="_project">Старые
-                                    <br>советы</td>
-                                <td>Кулинария</td>
-                                <td class="_center">53</td>
-                                <td class="_center">99</td>
-                                <td>1136</td>
-                                <td>
-                                    <div class="label _vip">VIP</div>
-                                </td>
-                                <td class="_status">
-                                    <div class="published _black">Опубликовано (26.10.2016 05:30)</div>Проверено 24.10.2016 09:15<strong>Постер: Елена В.</strong>(оплачено Администатор 27.10.2016 15:45)<strong>Редактор: meleshko2</strong><strong>Копирайтер: Галина Loboc</strong>
-                                </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-pencil"></i><span>Правка</span></a><a href="#" title="" class="small-button"><i class="fa fa-clock-o"></i><span>История</span></a>
-                                    <a href="#" title="" class="small-button"><i class="fa fa-external-link-square"></i><span>Экспорт</span>
-                                    </a><a href="#" title="" class="small-button"><i class="fa fa-trash-o"></i><span>Удалить</span></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="#" title="">Как рассчитать компенсацию за неиспользованный отпуск</a>
-                                </td>
-                                <td>8500 - 9500
-                                    <br>(9496) 664р.</td>
-                                <td>23.10.2017
-                                    <br>15:02</td>
-                                <td class="_project">Старые
-                                    <br>советы</td>
-                                <td>Кулинария</td>
-                                <td class="_center">53</td>
-                                <td class="_center">99</td>
-                                <td>1136</td>
-                                <td>
-                                    <div class="label _vip">VIP</div>
-                                </td>
-                                <td class="_status">
-                                    <div class="published _green">Опубликовано (26.10.2016 05:30)</div>Проверено 24.10.2016 09:15<strong>Постер: Елена В.</strong>(оплачено Администатор 27.10.2016 15:45)<strong>Редактор: meleshko2</strong><strong>Копирайтер: Галина Loboc</strong>
-                                </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-pencil"></i><span>Правка</span></a><a href="#" title="" class="small-button"><i class="fa fa-clock-o"></i><span>История</span></a>
-                                    <a href="#" title="" class="small-button"><i class="fa fa-external-link-square"></i><span>Экспорт</span>
-                                    </a><a href="#" title="" class="small-button"><i class="fa fa-trash-o"></i><span>Удалить</span></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="#" title="">Как рассчитать компенсацию за неиспользованный отпуск</a>
-                                </td>
-                                <td>8500 - 9500
-                                    <br>(9496) 664р.</td>
-                                <td>23.10.2017
-                                    <br>15:02</td>
-                                <td class="_project">Старые
-                                    <br>советы</td>
-                                <td>Кулинария</td>
-                                <td class="_center">53</td>
-                                <td class="_center">99</td>
-                                <td>1136</td>
-                                <td>
-                                    <div class="label _vip">VIP</div>
-                                </td>
-                                <td class="_status">
-                                    <div class="published _orange">Опубликовано (26.10.2016 05:30)</div>Проверено 24.10.2016 09:15<strong>Постер: Елена В.</strong>(оплачено Администатор 27.10.2016 15:45)<strong>Редактор: meleshko2</strong><strong>Копирайтер: Галина Loboc</strong>
-                                </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-pencil"></i><span>Правка</span></a><a href="#" title="" class="small-button"><i class="fa fa-clock-o"></i><span>История</span></a>
-                                    <a href="#" title="" class="small-button"><i class="fa fa-external-link-square"></i><span>Экспорт</span>
-                                    </a><a href="#" title="" class="small-button"><i class="fa fa-trash-o"></i><span>Удалить</span></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="#" title="">Как рассчитать компенсацию за неиспользованный отпуск</a>
-                                </td>
-                                <td>8500 - 9500
-                                    <br>(9496) 664р.</td>
-                                <td>23.10.2017
-                                    <br>15:02</td>
-                                <td class="_project">Старые
-                                    <br>советы</td>
-                                <td>Кулинария</td>
-                                <td class="_center">53</td>
-                                <td class="_center">99</td>
-                                <td>1136</td>
-                                <td>
-                                    <div class="label _vip">VIP</div>
-                                </td>
-                                <td class="_status">
-                                    <div class="published _red">Опубликовано (26.10.2016 05:30)</div>Проверено 24.10.2016 09:15<strong>Постер: Елена В.</strong>(оплачено Администатор 27.10.2016 15:45)<strong>Редактор: meleshko2</strong><strong>Копирайтер: Галина Loboc</strong>
-                                </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-pencil"></i><span>Правка</span></a><a href="#" title="" class="small-button"><i class="fa fa-clock-o"></i><span>История</span></a>
-                                    <a href="#" title="" class="small-button"><i class="fa fa-external-link-square"></i><span>Экспорт</span>
-                                    </a><a href="#" title="" class="small-button"><i class="fa fa-trash-o"></i><span>Удалить</span></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td> <a href="#" title="">Как рассчитать компенсацию за неиспользованный отпуск</a>
-                                </td>
-                                <td>8500 - 9500
-                                    <br>(9496) 664р.</td>
-                                <td>23.10.2017
-                                    <br>15:02</td>
-                                <td class="_project">Старые
-                                    <br>советы</td>
-                                <td>Кулинария</td>
-                                <td class="_center">53</td>
-                                <td class="_center">99</td>
-                                <td>1136</td>
-                                <td>
-                                    <div class="label _vip _inactive">VIP</div>
-                                </td>
-                                <td class="_status">
-                                    <div class="published _black">Опубликовано (26.10.2016 05:30)</div>Проверено 24.10.2016 09:15<strong>Постер: Елена В.</strong>(оплачено Администатор 27.10.2016 15:45)<strong>Редактор: meleshko2</strong><strong>Копирайтер: Галина Loboc</strong>
-                                </td>
-                                <td><a href="#" title="" class="small-button"><i class="fa fa-pencil"></i><span>Правка</span></a><a href="#" title="" class="small-button"><i class="fa fa-clock-o"></i><span>История</span></a>
-                                    <a href="#" title="" class="small-button"><i class="fa fa-external-link-square"></i><span>Экспорт</span>
-                                    </a><a href="#" title="" class="small-button"><i class="fa fa-trash-o"></i><span>Удалить</span></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+        </div>
+        <div class="advantages">
+            <div class="advantages__title">Наши преимущества</div>
+            <div class="advantages__list">
+                <div class="advantages-item">
+                    <div class="advantages-item__icon _money"></div>
+                    <div class="advantages-item__title">Платим <strong>от 50 руб за 1000 символов</strong> без пробелов</div>
                 </div>
-                <div class="pagination"><a href="#" title="" class="pagination__item _prev"><i class="fa fa-angle-double-left"></i><span>Предыдущая</span></a><a href="#" title="" class="pagination__item _active">1</a><a href="#" title="" class="pagination__item">2</a><a href="#"
-                    title="" class="pagination__item">3</a><a href="#" title="" class="pagination__item">4</a><a href="#" title="" class="pagination__item">5</a><a href="#" title="" class="pagination__item _next"><span>Следующая</span><i class="fa fa-angle-double-right"></i></a>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon _stat"></div>
+                    <div class="advantages-item__title">Ваша <strong>ставка увеличиваться</strong> в зависимости от качества вашей работы</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon _wallet"></div>
+                    <div class="advantages-item__title"><strong>Деньги сразу</strong> - Вам не нужно выставлять статьи на продажи и ждать пока их купят</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon _char"></div>
+                    <div class="advantages-item__title"><strong>Неограниченные возможности заработка</strong> - чем больше пишите, тем больше зарабатываете</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon _list"></div>
+                    <div class="advantages-item__title"><strong>Удобно работать</strong> - мы предоставляем четкие требования к каждому заданию</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="advantages-item__icon _tie"></div>
+                    <div class="advantages-item__title"><strong>Карьерный рост</strong> - лучшие из копирайтеров могут стать редакторами, с хорошей зарплатой</div>
                 </div>
             </div>
-        </main>
+        </div>
         <footer class="footer">
             <div class="footer__wrapper">
                 <div class="footer__logo"></div>
             </div>
         </footer>
+        <div id="modal-registration" class="modal modal-registration">
+            <div class="modal__close"></div>
+            <div class="modal__title">Регистрация</div>
+            <form class="modal-form">
+                <div class="modal-form__row">
+                    <div class="modal-form__column _left">
+                        <div class="modal-form__label">Как Вас зовут?</div>
+                    </div>
+                    <div class="modal-form__column _right">
+                        <input type="text" value="" class="form-field">
+                    </div>
+                </div>
+                <div class="modal-form__row">
+                    <div class="modal-form__column _left">
+                        <div class="modal-form__label">Ваш E-mail</div>
+                    </div>
+                    <div class="modal-form__column _right">
+                        <input type="email" value="" class="form-field">
+                    </div>
+                </div>
+                <div class="modal-form__row">
+                    <div class="modal-form__column _left">
+                        <div class="modal-form__label">Ваш Skype</div>
+                    </div>
+                    <div class="modal-form__column _right">
+                        <input type="text" value="" class="form-field">
+                    </div>
+                </div>
+                <div class="modal-form__row">
+                    <div class="modal-form__column _left">
+                        <div class="modal-form__label">Кошелёк WMR</div>
+                    </div>
+                    <div class="modal-form__column _right">
+                        <input type="text" value="" class="form-field">
+                    </div>
+                </div>
+                <div class="modal-form__row">
+                    <div class="modal-form__column _left">
+                        <div class="modal-form__label">Придумайте пароль</div>
+                    </div>
+                    <div class="modal-form__column _right">
+                        <input type="password" value="" class="form-field">
+                    </div>
+                </div>
+                <div class="modal-form__row">
+                    <div class="modal-form__column _left">
+                        <div class="modal-form__label">Повторите Пароль</div>
+                    </div>
+                    <div class="modal-form__column _right">
+                        <input type="password" value="" class="form-field">
+                    </div>
+                </div>
+                <input type="submit" value="продолжить" class="modal-form__submit">
+            </form>
+        </div>
+        <div id="modal-lost" class="modal modal-lost-password">
+            <div class="modal__close"></div>
+            <div class="modal__title">Восстановить пароль</div>
+            <form class="modal-form">
+                <div class="modal-form__field _lost">
+                    <input type="text" value="" placeholder="Введите вашу почту" class="form-field">
+                </div>
+            </form>
+            <input type="submit" value="Восстановить" class="modal-form__submit">
+        </div>
+        <div class="mask"></div>
         <script src="static/js/main.min.js"></script>
     </body>
 

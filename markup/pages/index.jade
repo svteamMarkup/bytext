@@ -1,7 +1,21 @@
-extends ./layout.jade
+doctype html
+html(class="no-js", lang="ru")
 
-block content
-  .content
-    +filter-date
-    +task-list
-    +pagination
+  include ../components/head/head
+  include ../components/top-main/top-main
+  include ../components/advantages/advantages
+  include ../components/modal/modal
+  include ../components/footer/footer
+
+  head
+    +head(head.defaults)
+  body
+    +top-main
+    +advantages
+    +footer()
+    +modal-registration
+    +modal-lost
+    .mask
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
