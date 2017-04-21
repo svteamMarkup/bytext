@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"moda",
+				"modal-form"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"top",
+				"top-main-center"
+			],
+			[
+				"to",
+				"top-main-header"
+			],
+			[
 				"no",
 				"no-repeat"
 			],
@@ -20,28 +52,12 @@
 				"margin-bottom"
 			],
 			[
-				"pad",
-				"padding-bottom\t(top-bar.scss)"
-			],
-			[
-				"padd",
-				"padding-top\t(top-bar.scss)"
-			],
-			[
 				"marg",
 				"margin-right"
 			],
 			[
 				"inl",
 				"inline"
-			],
-			[
-				"text",
-				"text-align"
-			],
-			[
-				"fon",
-				"font-weight"
 			],
 			[
 				"fle",
@@ -106,10 +122,6 @@
 			[
 				"abou",
 				"about-page-target__title"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"fn",
@@ -210,10 +222,6 @@
 			[
 				"backgr",
 				"background-position"
-			],
-			[
-				"top",
-				"top-bar"
 			],
 			[
 				"vi",
@@ -506,14 +514,6 @@
 			[
 				"tra",
 				"transparent"
-			],
-			[
-				"column",
-				"columns\t(GUI.scss)"
-			],
-			[
-				"smal",
-				"small-12"
 			]
 		]
 	},
@@ -593,15 +593,26 @@
 	[
 		"/Users/extiser/git/bytext/markup",
 		"/Users/extiser/git/bytext/markup/components",
-		"/Users/extiser/git/bytext/markup/components/task-list",
+		"/Users/extiser/git/bytext/markup/components/modal",
+		"/Users/extiser/git/bytext/markup/components/top-main",
 		"/Users/extiser/git/bytext/markup/pages",
 		"/Users/extiser/git/bytext/markup/static",
 		"/Users/extiser/git/bytext/markup/static/scss"
 	],
 	"file_history":
 	[
-		"/Users/extiser/git/bytext/markup/components/header/header.scss",
+		"/Users/extiser/git/bytext/markup/components/modal/modal.scss",
+		"/Users/extiser/git/bytext/markup/components/modal/modal.jade",
 		"/Users/extiser/git/bytext/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/bytext/markup/pages/index.jade",
+		"/Users/extiser/git/bytext/markup/components/top-main/top-main.jade",
+		"/Users/extiser/git/bytext/markup/components/top-main/top-main.scss",
+		"/Users/extiser/git/SVTEAM/edupay/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/bytext/tars-config.js",
+		"/Users/extiser/git/bytext/markup/components/advantages/advantages.jade",
+		"/Users/extiser/git/bytext/markup/components/advantages/advantages.scss",
+		"/Users/extiser/git/bytext/markup/pages/task.jade",
+		"/Users/extiser/git/bytext/markup/components/header/header.scss",
 		"/Users/extiser/git/sovets-pro/markup/modules/modal-baner/modal-baner.scss",
 		"/Users/extiser/git/sovets-pro/markup/modules/search-page/search-page.scss",
 		"/Users/extiser/git/sovets-pro/markup/modules/top-bar/top-bar.jade",
@@ -717,17 +728,7 @@
 		"/Users/extiser/git/sovets-pro/markup/modules/tips-hours/tips-hours.jade",
 		"/Users/extiser/git/sovets-pro/markup/modules/vk-widget/vk-widget.scss",
 		"/Users/extiser/git/sovets-pro/markup/pages/sitemap.jade",
-		"/Users/extiser/git/sovets-pro/markup/modules/sitemap-page/sitemap-page.jade",
-		"/Users/extiser/git/sovets-pro/markup/modules/sitemap-page/sitemap-page.scss",
-		"/Users/extiser/git/sovets-pro/markup/modules/menu/data/data.js",
-		"/Users/extiser/Dropbox/fix.css",
-		"/Users/extiser/git/nemodnaya/builds/static/css/main_ie9.css",
-		"/Users/extiser/git/nemodnaya/builds/static/css/main_ie9.min.css",
-		"/Users/extiser/git/sovets-pro/markup/static/scss/etc/other-icons.scss",
-		"/Users/extiser/git/sovets-pro/markup/modules/expert-settings/expert-settings.scss",
-		"/Users/extiser/git/sovets-pro/markup/modules/article-block/article-block.scss",
-		"/Users/extiser/git/sovets-pro/markup/modules/article-block/article-block.jade",
-		"/Users/extiser/git/sovets-pro/markup/modules/experts-menu/experts-menu.scss"
+		"/Users/extiser/git/sovets-pro/markup/modules/sitemap-page/sitemap-page.jade"
 	],
 	"find":
 	{
@@ -749,6 +750,12 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"._lost",
+			".modal-lost-password",
+			"checkbox",
+			"field",
+			"._bordered",
+			"_bordered",
 			"table",
 			"fix-mobi",
 			"main",
@@ -870,13 +877,7 @@
 			".form__element",
 			"font-size",
 			"box-sizing",
-			"'",
-			"extend",
-			"</p>",
-			"\t\t\t<p>",
-			"@media screen and (max-width: 768px) {",
-			"@media screen and (max-width: 480px) {",
-			";\n"
+			"'"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -884,6 +885,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
 			"paginate",
 			".banner-place( ",
 			"",
@@ -1010,8 +1012,7 @@
 			"../images",
 			"",
 			"b-why-you-need",
-			"b-in-photo",
-			"b-why"
+			"b-in-photo"
 		],
 		"reverse": false,
 		"show_context": false,
@@ -1070,7 +1071,7 @@
 	"project": "bytext.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 114.0
 	},
 	"save_all_on_build": true,
 	"select_file":

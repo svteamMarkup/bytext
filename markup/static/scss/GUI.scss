@@ -1,15 +1,3 @@
-::-webkit-input-placeholder {
-  color: #414852;
-}
-::-moz-placeholder {
-  color: #414852;
-}
-:-moz-placeholder {
-  color: #414852;
-}
-:-ms-input-placeholder {
-  color: #414852;
-}
 .button {
   box-sizing: border-box;
 
@@ -98,8 +86,6 @@ a {
   text-decoration: none;
 
   color: #2d7baf;
-
-  @include transition;
   &:hover {
     color: #2d7baf + #111;
   }
@@ -303,26 +289,22 @@ a {
           }
         }
         &._control {
-          a {
-            line-height: 24px;
-
-            display: inline-block;
-
-            width: 24px;
-            margin-right: 2px;
-
-            text-align: center;
-
-            color: #999;
-            border: 1px solid #ccc;
-            &:hover {
-              color: #fff;
-              background-color: #ccc;
-            }
-            .fa {
-              margin-right: 0;
-            }
-          }
+          // a {
+          //   line-height: 24px;
+          //   display: inline-block;
+          //   width: 24px;
+          //   margin-right: 2px;
+          //   text-align: center;
+          //   color: #999;
+          //   border: 1px solid #ccc;
+          //   &:hover {
+          //     color: #fff;
+          //     background-color: #ccc;
+          //   }
+          //   .fa {
+          //     margin-right: 0;
+          //   }
+          // }
         }
         &._padding {
           padding-left: 15px;
@@ -366,38 +348,80 @@ a {
   font-size: 10px;
   line-height: 22px;
 
-  display: block;
+  display: inline-block;
+  text-align: center;
 
   box-sizing: border-box;
-  width: 80px;
+  width: 100%;
+  min-width: 80px;
   height: 24px;
   margin-bottom: 4px;
+  padding-right: 5px;
   padding-left: 2px;
 
   text-transform: uppercase;
 
-  color: #868686 !important;
+  color: #868686;
   border: 1px solid #ccc;
   border-radius: 2px;
   &:hover {
-    color: #fff !important;
+    color: #fff;
     background-color: #ccc;
-    .fa {
-      color: #fff;
-    }
   }
-  &._center {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .fa {
-    font-size: 9px;
-
+  &:before {
     display: inline-block;
 
-    width: 12px;
+    margin-right: 5px;
+    margin-left: 5px;
 
-    color: #999;
+    vertical-align: middle;
+
+    @extend .fa;
+  }
+  &._notext {
+    max-width: 24px;
+    min-width: 24px;
+    padding-right: 0;
+  }
+  &._eye {
+    &:before {
+      @extend .fa-eye;
+    }
+  }
+  &._pencil {
+    &:before {
+      @extend .fa-pencil;
+    }
+  }
+  &._clock-o {
+    &:before {
+      @extend .fa-clock-o;
+    }
+  }
+  &._external-link-square {
+    &:before {
+      @extend .fa-external-link-square;
+    }
+  }
+  &._trash-o {
+    &:before {
+      @extend .fa-trash-o;
+    }
+  }
+  &._sign-in {
+    &:before {
+      @extend .fa-sign-in;
+    }
+  }
+  &._ban {
+    &:before {
+      @extend .fa-ban;
+    }
+  }
+  &._check {
+    &:before {
+      @extend .fa-check;
+    }
   }
 }
 

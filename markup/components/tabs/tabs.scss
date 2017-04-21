@@ -1,65 +1,68 @@
 .tabs {
-	display: flex;
+  display: flex;
 
-	margin-bottom: 14px;
+  margin-bottom: 14px;
 
-	align-items: center;
-	justify-content: space-between;
-	&__list {
-		display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__list {
+    display: flex;
 
-		justify-content: flex-start;
-	}
-	&__item {
-		padding-right: 40px;
+    justify-content: flex-start;
+  }
+  &__item {
+    font-family: 'Lato-Medium';
+    font-size: 15px;
 
-		font-family: "Lato-Medium";
-		font-size: 15px;
-		&._first {
-			margin-left: 19px;
-		}
-		span {
-			color: #414852;
-		}
-		a {
-			border-bottom: 1px dashed #2d7baf;
-		}
-		strong {
-			margin-left: 5px;
-		}
-	}
+    padding-right: 40px;
+    &:hover {
+      cursor: pointer;
+    }
+    &._first {
+      margin-left: 19px;
+    }
+    span {
+      color: #414852;
+    }
+    a {
+      border-bottom: 1px dashed #2d7baf;
+    }
+    strong {
+      margin-left: 5px;
+    }
+  }
 }
 .tabs-right {
-	display: flex;
+  font-size: 14px;
+  line-height: 1;
 
-	color: #414852;
+  display: flex;
 
-	font-size: 14px;
-	line-height: 1;
+  color: #414852;
 
-	justify-content: flex-start;
-	&__button {
-		text-align: center;
+  justify-content: flex-start;
+  &__button {
+    line-height: 26px;
 
-		line-height: 26px;
+    text-align: center;
 
-		@extend .button;
-	}
-	&__delete {
-		position: relative;
+    @extend .button;
+  }
+  &__delete {
+    position: relative;
 
-		margin-left: 4px;
-		.fa {
-			position: absolute;
-			top: 8px;
-			left: 8px;
-		}
-	}
-	&__simple-button {
-		width: 30px;
+    margin-left: 4px;
+    .fa {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+    }
+  }
+  &__simple-button {
+    line-height: 26px;
 
-		line-height: 26px;
+    width: 30px;
 
-		@extend .button;
-	}
+    @extend .button;
+  }
 }
