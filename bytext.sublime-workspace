@@ -4,16 +4,28 @@
 		"selected_items":
 		[
 			[
-				"moda",
-				"modal-form"
+				"min",
+				"min-width"
 			],
 			[
 				"text",
-				"text-transform"
+				"text-align"
 			],
 			[
 				"pad",
-				"padding-left"
+				"padding-right"
+			],
+			[
+				"margn",
+				"margin-right"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"moda",
+				"modal-form"
 			],
 			[
 				"padd",
@@ -56,10 +68,6 @@
 				"margin-right"
 			],
 			[
-				"inl",
-				"inline"
-			],
-			[
 				"fle",
 				"flex-start"
 			],
@@ -98,10 +106,6 @@
 			[
 				"te",
 				"text-align"
-			],
-			[
-				"margn",
-				"margin-top"
 			],
 			[
 				"com",
@@ -182,10 +186,6 @@
 			[
 				"max-",
 				"max-width"
-			],
-			[
-				"min",
-				"min-height"
 			],
 			[
 				"exp",
@@ -527,10 +527,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 367.0,
-		"last_filter": "Package Control: ",
+		"height": 126.0,
+		"last_filter": "php",
 		"selected_items":
 		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
@@ -564,7 +568,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 449.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -593,17 +597,22 @@
 	[
 		"/Users/extiser/git/bytext/markup",
 		"/Users/extiser/git/bytext/markup/components",
-		"/Users/extiser/git/bytext/markup/components/modal",
-		"/Users/extiser/git/bytext/markup/components/top-main",
+		"/Users/extiser/git/bytext/markup/components/tabs",
 		"/Users/extiser/git/bytext/markup/pages",
 		"/Users/extiser/git/bytext/markup/static",
 		"/Users/extiser/git/bytext/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/bytext/markup/components/task-list/task-list.jade",
+		"/Users/extiser/git/bytext/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/bytext/markup/components/tabs/tabs.scss",
+		"/Users/extiser/git/bytext/markup/pages/redaktora.jade",
+		"/Users/extiser/git/bytext/markup/components/filter/filter.jade",
+		"/Users/extiser/git/bytext/markup/components/task-list/task-list.scss",
+		"/Users/extiser/git/bytext/markup/components/task/task.jade",
 		"/Users/extiser/git/bytext/markup/components/modal/modal.scss",
 		"/Users/extiser/git/bytext/markup/components/modal/modal.jade",
-		"/Users/extiser/git/bytext/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/bytext/markup/pages/index.jade",
 		"/Users/extiser/git/bytext/markup/components/top-main/top-main.jade",
 		"/Users/extiser/git/bytext/markup/components/top-main/top-main.scss",
@@ -722,13 +731,7 @@
 		"/Users/extiser/git/sovets-pro/markup/modules/article-block-small/article-block-small.scss",
 		"/Users/extiser/git/sovets-pro/markup/modules/show-more/show-more.jade",
 		"/Users/extiser/git/sovets-pro/markup/modules/single-ask/single-ask.jade",
-		"/Users/extiser/git/sovets-pro/markup/static/scss/plugins/slick.scss",
-		"/Users/extiser/git/sovets-pro/markup/modules/zodiac/zodiac.scss",
-		"/Users/extiser/git/sovets-pro/markup/modules/zodiac/zodiac.jade",
-		"/Users/extiser/git/sovets-pro/markup/modules/tips-hours/tips-hours.jade",
-		"/Users/extiser/git/sovets-pro/markup/modules/vk-widget/vk-widget.scss",
-		"/Users/extiser/git/sovets-pro/markup/pages/sitemap.jade",
-		"/Users/extiser/git/sovets-pro/markup/modules/sitemap-page/sitemap-page.jade"
+		"/Users/extiser/git/sovets-pro/markup/static/scss/plugins/slick.scss"
 	],
 	"find":
 	{
@@ -750,6 +753,13 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"table",
+			"таск",
+			"small",
+			"a",
+			".small-button",
+			"_control",
+			"._control",
 			"._lost",
 			".modal-lost-password",
 			"checkbox",
@@ -870,14 +880,7 @@
 			"ea",
 			"coach",
 			"bday",
-			"Calibri-Regular",
-			"auto_complete",
-			"auto",
-			".form__label",
-			".form__element",
-			"font-size",
-			"box-sizing",
-			"'"
+			"Calibri-Regular"
 		],
 		"highlight": false,
 		"in_selection": false,

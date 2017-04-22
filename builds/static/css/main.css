@@ -424,6 +424,10 @@ blockquote {
   text-rendering: optimizeLegibility;
 }
 
+.button-column {
+  min-width: 400px;
+}
+
 .button, .add-post-attachment__button, .add-post-attachment__file, .add-post-save__button, .change-password__submit, .filter-block__simple-button, .filter-block__label, .profile-form-input-block__button, .right-sidebar-checkout__submit, .right-sidebar-checkout__button, .tabs-right__button, .tabs-right__simple-button {
   box-sizing: border-box;
   cursor: pointer;
@@ -771,7 +775,6 @@ a:hover {
   font-size: 10px;
   line-height: 22px;
   display: inline-block;
-  text-align: center;
   box-sizing: border-box;
   width: 100%;
   min-width: 80px;
@@ -779,6 +782,7 @@ a:hover {
   margin-bottom: 4px;
   padding-right: 5px;
   padding-left: 2px;
+  text-align: center;
   text-transform: uppercase;
   color: #868686;
   border: 1px solid #ccc;
@@ -798,8 +802,8 @@ a:hover {
 }
 
 .small-button._notext {
-  max-width: 24px;
   min-width: 24px;
+  max-width: 24px;
   padding-right: 0;
 }
 
