@@ -10261,7 +10261,6 @@ return jQuery;
 
 
 
-
 $('[data-modal]').click(function (e) {
   e.preventDefault();
   $('.modal').removeClass('_active');
@@ -10274,6 +10273,7 @@ $('.mask, .modal__close').click(function () {
   $(this).removeClass('_active');
   $('.modal').removeClass('_active');
 });
+
 
 
 
