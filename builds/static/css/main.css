@@ -1402,8 +1402,8 @@ input[type="file"] {
   text-align: center;
   font-size: 14px;
   line-height: 28px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
 }
 
 .filter-block__label._not-click {

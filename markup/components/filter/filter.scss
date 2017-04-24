@@ -145,8 +145,8 @@
 		line-height: 28px;
 
 		@extend .button;
-		padding-left: 16px;
-		padding-right: 16px;
+		padding-left: 16px !important;
+		padding-right: 16px !important;
 		&._not-click {
 			cursor: default;
 		}

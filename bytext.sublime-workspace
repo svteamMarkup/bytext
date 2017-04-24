@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-right"
+			],
+			[
 				"fil",
 				"filter-block"
 			],
@@ -38,10 +42,6 @@
 			[
 				"text",
 				"text-transform"
-			],
-			[
-				"pad",
-				"padding-right"
 			],
 			[
 				"inl",
@@ -519,24 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "markup/pages/sites.jade",
-			"settings":
-			{
-				"buffer_size": 104,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "markup/static/scss/GUI.scss",
-			"settings":
-			{
-				"buffer_size": 8153,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -623,13 +605,15 @@
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/bytext/markup/pages/sites.jade",
+		"/Users/extiser/git/bytext/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/bytext/markup/components/filter/filter.scss",
 		"/Users/extiser/git/bytext/markup/components/sites-page/sites-page.jade",
 		"/Users/extiser/git/bytext/markup/pages/layout.jade",
 		"/Users/extiser/git/bytext/markup/components/filter/filter.jade",
 		"/Users/extiser/git/bytext/markup/pages/settings.jade",
 		"/Users/extiser/git/bytext/markup/components/settings-page/settings-page.jade",
 		"/Users/extiser/git/bytext/markup/components/settings-page/settings-page.scss",
-		"/Users/extiser/git/bytext/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/SVTEAM/truetext/protected/views/prodvigator/list.php",
 		"/Users/extiser/git/bytext/markup/components/task-list/task-list.jade",
 		"/Users/extiser/git/bytext/markup/components/tabs/tabs.scss",
@@ -748,9 +732,7 @@
 		"/Users/extiser/git/sovets-pro/markup/pages/advertise.jade",
 		"/Users/extiser/git/sovets-pro/markup/modules/top-menu/top-menu.jade",
 		"/Users/extiser/git/sovets-pro/markup/modules/expert-articles/expert-articles.jade",
-		"/Users/extiser/git/sovets-pro/markup/modules/expert-articles/expert-articles.scss",
-		"/Users/extiser/git/sovets-pro/markup/modules/expert-add-article/expert-add-article.scss",
-		"/Users/extiser/git/sovets-pro/markup/pages/experts-add-article.jade"
+		"/Users/extiser/git/sovets-pro/markup/modules/expert-articles/expert-articles.scss"
 	],
 	"find":
 	{
@@ -772,6 +754,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"__label",
 			".table",
 			"button",
 			"form",
@@ -898,8 +881,7 @@
 			"team",
 			"massa",
 			"face",
-			"eyes",
-			"ea"
+			"eyes"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1045,68 +1027,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "markup/pages/sites.jade",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 104,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104,
-								104
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "markup/static/scss/GUI.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8153,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3005,
-								3005
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3931.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
