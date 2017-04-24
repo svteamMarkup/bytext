@@ -1,0 +1,145 @@
+.settings-page {
+  display: flex;
+
+  padding: 20px;
+
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(#000,.28);
+
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  &__top {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  &__column {
+    width: 100%;
+    max-width: 340px;
+  }
+  &__button {
+    font-size: 14px;
+    line-height: 28px;
+
+    margin-right: 5px;
+    padding: 4px 12px;
+
+    text-align: center;
+
+    @extend .button;
+    @extend .button._white;
+  }
+  &__title {
+    font-family: 'Lato-Semibold';
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+
+    color: #414852;
+    &._no {
+      span {
+        color: #e2695e;
+      }
+    }
+    &._yes {
+      span {
+        color: #82c537;
+      }
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+.settings-page-block-add {
+  display: flex;
+
+  margin-bottom: 10px;
+
+  justify-content: space-between;
+  align-items: stretch;
+  &__field {
+    width: 72%;
+    min-height: 30px;
+
+    @extend .input-form;
+  }
+  &__submit {
+    font-size: 14px;
+
+    width: 25%;
+
+    @extend .button;
+    @extend .button._simple;
+  }
+}
+
+.settings-page-block-list {
+  overflow-y: scroll;
+
+  max-height: 235px;
+  margin-bottom: 30px;
+
+  border: 1px solid #ccc;
+  &._top {
+    max-height: 275px;
+  }
+  &__item {
+    font-size: 14px;
+
+    position: relative;
+
+    padding: 4px 4px 4px 10px;
+
+    color: #2b3440;
+    border-bottom: 1px dotted #ccc;
+    a {
+      position: absolute;
+      right: 4px;
+
+      color: #ccc;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.settings-page-row {
+  display: flex;
+
+  margin-top: 45px;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  &:first-child {
+    margin-top: 30px;
+  }
+  &__left {
+    font-family: 'Lato-Semibold';
+    font-size: 14px;
+
+    max-width: 80%;
+
+    color: #414852;
+    &._full {
+      width: 100%;
+    }
+  }
+  &__right {
+    max-width: 90px;
+    min-height: 30px;
+
+    @extend .input-form;
+    &._textarea {
+      width: 100%;
+      max-width: 100%;
+      min-height: 120px;
+      margin-top: 5px;
+    }
+  }
+}

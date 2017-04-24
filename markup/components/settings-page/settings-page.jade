@@ -1,0 +1,81 @@
+mixin settings-page(data)
+  .settings-page
+    .settings-page__top
+      a(href="#" title="").settings-page__button Основное
+      a(href="#" title="").settings-page__button Сайты
+
+    .settings-page__column
+      .settings-page__title._no Стоп слова <span>(нельзя использовать)</span>
+      
+      .settings-page-block
+        .settings-page-block-add
+          input(type="text" value="").settings-page-block-add__field
+          input(type="submit" value="Добавить").settings-page-block-add__submit
+        .settings-page-block-list
+          - for (var i = 0; i < 20; i++)
+            .settings-page-block-list__item достаточно
+              a(href="#" title="")
+                i.fa.fa-times
+
+      .settings-page__title Стоп слова для TOP
+      
+      .settings-page-block
+        .settings-page-block-list._top
+          - for (var i = 0; i < 20; i++)
+            .settings-page-block-list__item достаточно
+              a(href="#" title="")
+                i.fa.fa-times
+
+    .settings-page__column
+      .settings-page__title._yes ОДноразовые <span>(можно использовать)</span>
+      
+      .settings-page-block
+        .settings-page-block-add
+          input(type="text" value="").settings-page-block-add__field
+          input(type="submit" value="Добавить").settings-page-block-add__submit
+        .settings-page-block-list
+          - for (var i = 0; i < 20; i++)
+            .settings-page-block-list__item достаточно
+              a(href="#" title="")
+                i.fa.fa-times
+
+      .settings-page__title ЧЕК-ЛИСТ
+      
+      .settings-page-block
+        .settings-page-block-add
+          input(type="text" value="").settings-page-block-add__field
+          input(type="submit" value="Добавить").settings-page-block-add__submit
+        .settings-page-block-list
+          - for (var i = 0; i < 20; i++)
+            .settings-page-block-list__item достаточно
+              a(href="#" title="")
+                i.fa.fa-times
+
+    .settings-page__column
+      .settings-page-row
+        .settings-page-row__left Принимаемый %<br>уникальности
+        input(type="text" value="").settings-page-row__right
+
+      .settings-page-row
+        .settings-page-row__left Кол-во символов<br> на 1 абзац
+        input(type="text" value="").settings-page-row__right
+
+      .settings-page-row
+        .settings-page-row__left Допустимая погрешность при<br> проверке кол-ва-символов
+        input(type="text" value="").settings-page-row__right
+
+      .settings-page-row
+        .settings-page-row__left Максимальное кол-во активных<br> задач копирайтера
+        input(type="text" value="").settings-page-row__right
+
+      .settings-page-row
+        .settings-page-row__left Максимальный срок исполнения<br> задачи копирайтером
+        input(type="text" value="").settings-page-row__right
+
+      .settings-page-row
+        .settings-page-row__left Ставка для копирайтеров по<br> умолчанию
+        input(type="text" value="").settings-page-row__right
+
+      .settings-page-row
+        .settings-page-row__left._full Проксы, Login:pass.host:port
+        textarea().settings-page-row__right._textarea

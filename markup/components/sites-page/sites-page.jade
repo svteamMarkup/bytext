@@ -1,0 +1,9 @@
+mixin sites-page(data)
+  .sites-page
+    form(method="GET" action="").filter
+      .filter__inner
+        .filter__row
+          .filter-block
+            input(type="text" value="").filter-block__search-input
+          .filter-block._control-tasks
+            a(href="#" title="").filter-block__label._white._big Добавить сайт
