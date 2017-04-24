@@ -4,20 +4,44 @@
 		"selected_items":
 		[
 			[
+				"fil",
+				"filter-block"
+			],
+			[
+				"marign",
+				"margin-top"
+			],
+			[
+				"se",
+				"settings-page-row__right"
+			],
+			[
+				"marn",
+				"margin-top"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"margn",
+				"margin-bottom"
+			],
+			[
 				"min",
-				"min-width"
+				"min-height"
 			],
 			[
 				"text",
-				"text-align"
+				"text-transform"
 			],
 			[
 				"pad",
 				"padding-right"
-			],
-			[
-				"margn",
-				"margin-right"
 			],
 			[
 				"inl",
@@ -30,10 +54,6 @@
 			[
 				"padd",
 				"padding"
-			],
-			[
-				"fon",
-				"font-size"
 			],
 			[
 				"back",
@@ -58,10 +78,6 @@
 			[
 				"margin",
 				"margin-left"
-			],
-			[
-				"marign",
-				"margin-bottom"
 			],
 			[
 				"marg",
@@ -340,10 +356,6 @@
 				"margin-top"
 			],
 			[
-				"max",
-				"max-width"
-			],
-			[
 				"dire",
 				"direct-top"
 			],
@@ -502,23 +514,29 @@
 			[
 				"small",
 				"small-12\t(index.jade)"
-			],
-			[
-				"tp",
-				"tips-hours"
-			],
-			[
-				"tip",
-				"tips-hours"
-			],
-			[
-				"tra",
-				"transparent"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "markup/pages/sites.jade",
+			"settings":
+			{
+				"buffer_size": 104,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/static/scss/GUI.scss",
+			"settings":
+			{
+				"buffer_size": 8153,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -597,18 +615,25 @@
 	[
 		"/Users/extiser/git/bytext/markup",
 		"/Users/extiser/git/bytext/markup/components",
-		"/Users/extiser/git/bytext/markup/components/tabs",
+		"/Users/extiser/git/bytext/markup/components/filter",
+		"/Users/extiser/git/bytext/markup/components/sites-page",
 		"/Users/extiser/git/bytext/markup/pages",
 		"/Users/extiser/git/bytext/markup/static",
 		"/Users/extiser/git/bytext/markup/static/scss"
 	],
 	"file_history":
 	[
-		"/Users/extiser/git/bytext/markup/components/task-list/task-list.jade",
+		"/Users/extiser/git/bytext/markup/components/sites-page/sites-page.jade",
+		"/Users/extiser/git/bytext/markup/pages/layout.jade",
+		"/Users/extiser/git/bytext/markup/components/filter/filter.jade",
+		"/Users/extiser/git/bytext/markup/pages/settings.jade",
+		"/Users/extiser/git/bytext/markup/components/settings-page/settings-page.jade",
+		"/Users/extiser/git/bytext/markup/components/settings-page/settings-page.scss",
 		"/Users/extiser/git/bytext/markup/static/scss/GUI.scss",
+		"/Users/extiser/git/SVTEAM/truetext/protected/views/prodvigator/list.php",
+		"/Users/extiser/git/bytext/markup/components/task-list/task-list.jade",
 		"/Users/extiser/git/bytext/markup/components/tabs/tabs.scss",
 		"/Users/extiser/git/bytext/markup/pages/redaktora.jade",
-		"/Users/extiser/git/bytext/markup/components/filter/filter.jade",
 		"/Users/extiser/git/bytext/markup/components/task-list/task-list.scss",
 		"/Users/extiser/git/bytext/markup/components/task/task.jade",
 		"/Users/extiser/git/bytext/markup/components/modal/modal.scss",
@@ -725,13 +750,7 @@
 		"/Users/extiser/git/sovets-pro/markup/modules/expert-articles/expert-articles.jade",
 		"/Users/extiser/git/sovets-pro/markup/modules/expert-articles/expert-articles.scss",
 		"/Users/extiser/git/sovets-pro/markup/modules/expert-add-article/expert-add-article.scss",
-		"/Users/extiser/git/sovets-pro/markup/pages/experts-add-article.jade",
-		"/Users/extiser/git/sovets-pro/markup/modules/expert-add-article/expert-add-article.jade",
-		"/Users/extiser/git/sovets-pro/markup/modules/experts-profile/experts-profile.scss",
-		"/Users/extiser/git/sovets-pro/markup/modules/article-block-small/article-block-small.scss",
-		"/Users/extiser/git/sovets-pro/markup/modules/show-more/show-more.jade",
-		"/Users/extiser/git/sovets-pro/markup/modules/single-ask/single-ask.jade",
-		"/Users/extiser/git/sovets-pro/markup/static/scss/plugins/slick.scss"
+		"/Users/extiser/git/sovets-pro/markup/pages/experts-add-article.jade"
 	],
 	"find":
 	{
@@ -753,6 +772,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			".table",
+			"button",
+			"form",
 			"table",
 			"таск",
 			"small",
@@ -877,10 +899,7 @@
 			"massa",
 			"face",
 			"eyes",
-			"ea",
-			"coach",
-			"bday",
-			"Calibri-Regular"
+			"ea"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1026,8 +1045,68 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "markup/pages/sites.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "markup/static/scss/GUI.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3005,
+								3005
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3931.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
